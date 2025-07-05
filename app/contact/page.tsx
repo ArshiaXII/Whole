@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Badge } from "@/components/ui/badge"
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from "lucide-react"
+import { Phone, Mail, MapPin, Send, CheckCircle } from "lucide-react"
 import Link from "next/link"
 
 export default function ContactPage() {
@@ -94,8 +94,8 @@ export default function ContactPage() {
           <Badge className="mb-4 bg-green-100 text-green-800 hover:bg-green-200">Get in Touch</Badge>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Contact WholeGreen</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to elevate your culinary experience with premium microgreens? We're here to help with orders,
-            questions, and custom growing solutions.
+            Ready to learn more about our sustainable urban agriculture solutions? We're here to help with questions,
+            consultations, and custom growing solutions.
           </p>
         </div>
       </section>
@@ -184,7 +184,7 @@ export default function ContactPage() {
                           value={formData.message}
                           onChange={handleChange}
                           className="mt-1"
-                          placeholder="Tell us about your microgreen needs, order quantities, delivery requirements, or any questions you have..."
+                          placeholder="Tell us about your interest in urban agriculture, sustainability questions, or any inquiries you have..."
                         />
                       </div>
 
@@ -209,8 +209,8 @@ export default function ContactPage() {
                     <Phone className="w-6 h-6 text-green-600 mt-1" />
                     <div>
                       <h3 className="font-semibold text-gray-900">Phone</h3>
-                      <p className="text-gray-600">+1 (555) 123-4567</p>
-                      <p className="text-sm text-gray-500">Monday - Friday, 8:00 AM - 6:00 PM</p>
+                      <p className="text-gray-600">+90 (212) 123-4567</p>
+                      <p className="text-sm text-gray-500">Available for consultations</p>
                     </div>
                   </div>
 
@@ -218,7 +218,7 @@ export default function ContactPage() {
                     <Mail className="w-6 h-6 text-green-600 mt-1" />
                     <div>
                       <h3 className="font-semibold text-gray-900">Email</h3>
-                      <p className="text-gray-600">info@wholegreen.com</p>
+                      <p className="text-gray-600">info@wholegreentarim.com</p>
                       <p className="text-sm text-gray-500">We respond within 24 hours</p>
                     </div>
                   </div>
@@ -228,75 +228,16 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-gray-900">Address</h3>
                       <p className="text-gray-600">
-                        123 Green Valley Road
+                        İstanbul, Türkiye
                         <br />
-                        Farm City, FC 12345
-                        <br />
-                        United States
+                        Sustainable Urban Agriculture Center
                       </p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-xl text-gray-900">Business Hours</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div className="flex justify-between items-center">
-                      <span className="text-gray-600">Monday - Friday</span>
-                      <span className="font-semibold text-gray-900">8:00 AM - 6:00 PM</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-gray-600">Saturday</span>
-                      <span className="font-semibold text-gray-900">9:00 AM - 4:00 PM</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-gray-600">Sunday</span>
-                      <span className="text-gray-500">Closed</span>
-                    </div>
-                  </div>
 
-                  <div className="mt-6 p-4 bg-green-50 rounded-lg">
-                    <div className="flex items-center gap-2 mb-2">
-                      <Clock className="w-4 h-4 text-green-600" />
-                      <span className="font-semibold text-green-800">Same-Day Orders</span>
-                    </div>
-                    <p className="text-sm text-green-700">
-                      Orders placed before 2:00 PM can be delivered the same day within our local delivery area.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-xl text-gray-900">Quick Order Info</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">Minimum Orders</h4>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        <li>• Restaurants: $50 minimum</li>
-                        <li>• Individual customers: $25 minimum</li>
-                        <li>• Bulk orders: Contact for pricing</li>
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">Delivery Areas</h4>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        <li>• Local delivery: 25-mile radius</li>
-                        <li>• Regional shipping: 3-5 business days</li>
-                        <li>• National shipping: Available upon request</li>
-                      </ul>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </div>
@@ -310,48 +251,48 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">How fresh are your microgreens?</CardTitle>
+                <CardTitle className="text-lg">What is urban agriculture?</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Our microgreens are harvested daily and delivered within 24-48 hours of harvest to ensure maximum
-                  freshness and nutritional value.
+                  Urban agriculture involves growing food in cities using innovative techniques like vertical farming,
+                  hydroponics, and controlled environment agriculture to maximize efficiency and sustainability.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Do you offer bulk pricing?</CardTitle>
+                <CardTitle className="text-lg">What are the benefits of vertical farming?</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Yes! We offer competitive bulk pricing for restaurants, catering companies, and large orders. Contact
-                  us for a custom quote.
+                  Vertical farming uses 95% less water, requires no pesticides, produces year-round harvests, and can
+                  grow food in urban areas without soil or weather dependencies.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">What's your shelf life?</CardTitle>
+                <CardTitle className="text-lg">How sustainable are your methods?</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  When properly stored, our microgreens maintain peak quality for 5-14 days depending on the variety. We
-                  provide storage instructions with every order.
+                  Our methods focus on sustainability through water conservation, renewable energy use, minimal
+                  transportation needs, and zero agricultural runoff or soil degradation.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Can you grow custom varieties?</CardTitle>
+                <CardTitle className="text-lg">Do you offer consulting services?</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  We can grow custom varieties for special events, seasonal menus, or ongoing restaurant needs. Lead
-                  time is typically 2-3 weeks.
+                  Yes! We provide consulting for urban agriculture projects, vertical farming setup, sustainability
+                  planning, and modern agricultural technology implementation.
                 </p>
               </CardContent>
             </Card>
@@ -370,20 +311,20 @@ export default function ContactPage() {
                 className="h-8 w-auto mb-4 filter brightness-0 invert"
               />
               <p className="text-gray-300 mb-4">
-                Premium microgreens grown with precision and delivered fresh to your kitchen. Elevating culinary
-                experiences with nutrient-dense, flavorful greens.
+                Pioneering sustainable urban agriculture in Turkey. Bringing modern farming technologies to cities
+                for a healthier, more sustainable future.
               </p>
               <div className="flex space-x-4">
                 <Phone className="h-5 w-5 text-green-400" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">+90 (212) 123-4567</span>
               </div>
               <div className="flex space-x-4 mt-2">
                 <Mail className="h-5 w-5 text-green-400" />
-                <span className="text-gray-300">info@wholegreen.com</span>
+                <span className="text-gray-300">info@wholegreentarim.com</span>
               </div>
               <div className="flex space-x-4 mt-2">
                 <MapPin className="h-5 w-5 text-green-400" />
-                <span className="text-gray-300">123 Green Valley, Farm City, FC 12345</span>
+                <span className="text-gray-300">İstanbul, Türkiye</span>
               </div>
             </div>
 

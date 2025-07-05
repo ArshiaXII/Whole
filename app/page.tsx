@@ -5,17 +5,228 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
-import { Leaf, Microscope, Sprout, Rocket, Users, TrendingUp, ChefHat, Beaker, Globe, Star } from "lucide-react"
+import { Leaf, Microscope, Sprout, Rocket, Users, TrendingUp, ChefHat, Beaker, Globe, Star, Languages } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import LoadingScreen from "@/components/loading-screen"
 
+// Language content
+const content = {
+  en: {
+    nav: {
+      home: "HOME",
+      products: "PRODUCTS",
+      about: "ABOUT US",
+      services: "SERVICES",
+      team: "TEAM",
+      contacts: "CONTACTS"
+    },
+    hero: {
+      welcome: "Welcome to WHOLEGREEN",
+      mission: "Our mission is to demonstrate that modern urban agriculture is possible and to ensure everyone has access to fresh food based on the core principles of sustainability, hygiene, and quality.",
+      description: "We aim to increase efficiency and use natural resources optimally through vertical farming technologies. Our purpose is to bring the food of the future to the city today and offer people a healthier life."
+    },
+    services: {
+      title: "Our Services",
+      subtitle: "What Exactly We Do?",
+      description: "We provide comprehensive agricultural technology solutions",
+      microgreen: {
+        title: "Microgreen Production",
+        description: "Advanced cultivation systems for premium microgreens"
+      },
+      indoor: {
+        title: "Indoor Agriculture",
+        description: "Controlled environment farming solutions"
+      },
+      space: {
+        title: "Space Agriculture",
+        description: "Extraterrestrial farming technologies"
+      },
+      precision: {
+        title: "Precision Farming",
+        description: "IoT-enabled monitoring systems"
+      },
+      hydroponics: {
+        title: "Hydroponics Systems",
+        description: "Soil-free growing technology"
+      },
+      consulting: {
+        title: "Agricultural Consulting",
+        description: "Expert technical consultation"
+      }
+    },
+    stats: {
+      clients: "Happy Clients",
+      systems: "Systems Installed",
+      plants: "Plants Grown",
+      experience: "Years of Exp",
+      specialists: "Specialists",
+      awards: "Tech Awards"
+    },
+    products: {
+      title: "Our Products",
+      subtitle: "Premium Microgreens",
+      description: "Discover our range of premium microgreen varieties, each with unique flavor profiles and nutritional benefits"
+    },
+    team: {
+      title: "Our Staff",
+      subtitle: "Who We Are?",
+      description: "Meet our amazing team of agricultural scientists and technology experts",
+      sarah: {
+        name: "Dr. Sarah Chen",
+        role: "Agricultural Scientist, Microgreen Specialist",
+        description: "Leading expert in microgreen cultivation with 15+ years of research experience"
+      },
+      michael: {
+        name: "Dr. Michael Torres",
+        role: "Space Agriculture Engineer",
+        description: "Pioneer in extraterrestrial farming technologies and closed-loop systems"
+      },
+      emily: {
+        name: "Dr. Emily Rodriguez",
+        role: "Indoor Agriculture Systems Designer",
+        description: "Specialist in controlled environment agriculture and hydroponic systems"
+      }
+    },
+    about: {
+      title: "About Us",
+      subtitle: "Whole Green Tarım A.Ş.",
+      tagline: "Bringing Nature to the City",
+      description: "Whole Green Tarım A.Ş. consists of a professional team that is a pioneer of sustainable and modern agriculture in the city. Our Istanbul-based company combines:",
+      features: [
+        "Scientific production with agricultural engineering",
+        "Strategic management with business expertise",
+        "Strong brand creation with advertising",
+        "Technological innovation with aviation vision"
+      ],
+      goal: "Our goal is to produce the most hygienic, fresh and healthy vegetables that can be consumed without washing in the city, with minimum space and maximum efficiency, and deliver them to tables.",
+      priority: "Our biggest priority is to provide everyone with access to quality and safe food with a system that extends from major suppliers in Turkey and Europe to the end consumer.",
+      mission: {
+        title: "Our Mission",
+        content: "To show that modern agriculture is possible in the city, to ensure that everyone has access to fresh food based on sustainability, hygiene and quality. To increase efficiency with vertical farming technologies and use natural resources most efficiently. Our aim is to bring the food of the future to the city today and offer people a healthy life."
+      }
+    },
+    cta: {
+      title: "Ready to Transform Your Agriculture?",
+      description: "Contact us today to learn how our advanced agricultural technologies can revolutionize your farming operations",
+      button: "Get Started Today"
+    }
+  },
+  tr: {
+    nav: {
+      home: "ANA SAYFA",
+      products: "ÜRÜNLER",
+      about: "HAKKIMIZDA",
+      services: "HİZMETLER",
+      team: "EKİP",
+      contacts: "İLETİŞİM"
+    },
+    hero: {
+      welcome: "WHOLEGREEN'e Hoş Geldiniz",
+      mission: "Misyonumuz, modern kentsel tarımın mümkün olduğunu göstermek ve sürdürülebilirlik, hijyen ve kalite temel ilkeleri doğrultusunda herkesin taze gıdaya erişimini sağlamaktır.",
+      description: "Dikey tarım teknolojileri aracılığıyla verimliliği artırmayı ve doğal kaynakları optimal şekilde kullanmayı hedefliyoruz. Amacımız, geleceğin gıdasını bugün şehre getirmek ve insanlara daha sağlıklı bir yaşam sunmaktır."
+    },
+    services: {
+      title: "Hizmetlerimiz",
+      subtitle: "Tam Olarak Ne Yapıyoruz?",
+      description: "Kapsamlı tarımsal teknoloji çözümleri sunuyoruz",
+      microgreen: {
+        title: "Mikroyeşil Üretimi",
+        description: "Premium mikroyeşiller için gelişmiş yetiştirme sistemleri"
+      },
+      indoor: {
+        title: "İç Mekan Tarımı",
+        description: "Kontrollü ortam tarım çözümleri"
+      },
+      space: {
+        title: "Uzay Tarımı",
+        description: "Dünya dışı tarım teknolojileri"
+      },
+      precision: {
+        title: "Hassas Tarım",
+        description: "IoT destekli izleme sistemleri"
+      },
+      hydroponics: {
+        title: "Hidroponik Sistemler",
+        description: "Topraksız yetiştirme teknolojisi"
+      },
+      consulting: {
+        title: "Tarımsal Danışmanlık",
+        description: "Uzman teknik danışmanlık"
+      }
+    },
+    stats: {
+      clients: "Mutlu Müşteri",
+      systems: "Kurulan Sistem",
+      plants: "Yetiştirilen Bitki",
+      experience: "Yıl Deneyim",
+      specialists: "Uzman",
+      awards: "Teknoloji Ödülü"
+    },
+    products: {
+      title: "Ürünlerimiz",
+      subtitle: "Premium Mikroyeşiller",
+      description: "Her biri benzersiz lezzet profilleri ve beslenme faydaları olan premium mikroyeşil çeşitlerimizi keşfedin"
+    },
+    team: {
+      title: "Ekibimiz",
+      subtitle: "Biz Kimiz?",
+      description: "Tarım bilimcileri ve teknoloji uzmanlarından oluşan harika ekibimizle tanışın",
+      sarah: {
+        name: "Dr. Sarah Chen",
+        role: "Tarım Bilimci, Mikroyeşil Uzmanı",
+        description: "15+ yıllık araştırma deneyimi olan mikroyeşil yetiştiriciliği alanında önde gelen uzman"
+      },
+      michael: {
+        name: "Dr. Michael Torres",
+        role: "Uzay Tarımı Mühendisi",
+        description: "Dünya dışı tarım teknolojileri ve kapalı döngü sistemleri alanında öncü"
+      },
+      emily: {
+        name: "Dr. Emily Rodriguez",
+        role: "İç Mekan Tarım Sistemleri Tasarımcısı",
+        description: "Kontrollü ortam tarımı ve hidroponik sistemler uzmanı"
+      }
+    },
+    about: {
+      title: "Hakkımızda",
+      subtitle: "Whole Green Tarım A.Ş.",
+      tagline: "Doğayı Şehre Taşıyoruz",
+      description: "Whole Green Tarım A.Ş., şehirde sürdürülebilir ve modern tarımın öncüsü olan profesyonel bir ekipten oluşur. İstanbul merkezli şirketimiz;",
+      features: [
+        "Ziraat mühendisliğiyle bilimsel üretim",
+        "İşletme uzmanlığıyla stratejik yönetim",
+        "Reklamcılıkla güçlü marka yaratımı",
+        "Ve havacılık vizyonuyla teknolojik inovasyonu"
+      ],
+      goal: "Hedefimiz; şehirde en hijyenik, yıkamadan tüketilebilen, taze ve sağlıklı sebzeleri minimum alanda, maksimum verimle üretip sofralara ulaştırmak.",
+      priority: "Türkiye ve Avrupa'da büyük tedarikçilerden başlayarak, nihai tüketiciye kadar uzanan bir sistemle; herkese kaliteli ve güvenli gıda erişimi sağlamak en büyük önceliğimiz.",
+      mission: {
+        title: "Misyonumuz",
+        content: "Şehirde modern tarımın mümkün olduğunu göstermek, sürdürülebilirlik, hijyen ve kaliteyi temel alarak herkesin taze gıdaya ulaşmasını sağlamak. Dikey tarım teknolojileriyle verimliliği artırmak ve doğal kaynakları en verimli şekilde kullanmak. Amacımız; geleceğin gıdasını bugünden şehre taşımak ve insanlara sağlıklı bir yaşam sunmak."
+      }
+    },
+    cta: {
+      title: "Tarımınızı Dönüştürmeye Hazır mısınız?",
+      description: "Gelişmiş tarım teknolojilerimizin tarım operasyonlarınızı nasıl devrim niteliğinde değiştirebileceğini öğrenmek için bugün bizimle iletişime geçin",
+      button: "Hemen Başlayın"
+    }
+  }
+}
+
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true)
+  const [language, setLanguage] = useState<'en' | 'tr'>('tr') // Default to Turkish
 
   const handleLoadingComplete = () => {
     setIsLoading(false)
   }
+
+  const toggleLanguage = () => {
+    setLanguage(prev => prev === 'en' ? 'tr' : 'en')
+  }
+
+  const t = content[language]
 
   if (isLoading) {
     return <LoadingScreen onComplete={handleLoadingComplete} />
@@ -48,23 +259,32 @@ export default function HomePage() {
 
             <div className="hidden md:flex items-center space-x-8">
               <Link href="/" className="text-green-400 hover:text-green-300 transition-colors font-orbitron font-medium">
-                HOME
+                {t.nav.home}
               </Link>
               <Link href="/products" className="text-white hover:text-green-400 transition-colors font-orbitron font-medium">
-                PRODUCTS
+                {t.nav.products}
               </Link>
               <Link href="#about" className="text-white hover:text-green-400 transition-colors font-orbitron font-medium">
-                ABOUT US
+                {t.nav.about}
               </Link>
               <Link href="#services" className="text-white hover:text-green-400 transition-colors font-orbitron font-medium">
-                SERVICES
+                {t.nav.services}
               </Link>
               <Link href="#team" className="text-white hover:text-green-400 transition-colors font-orbitron font-medium">
-                TEAM
+                {t.nav.team}
               </Link>
               <Link href="/contact" className="text-white hover:text-green-400 transition-colors font-orbitron font-medium">
-                CONTACTS
+                {t.nav.contacts}
               </Link>
+
+              {/* Language Toggle */}
+              <button
+                onClick={toggleLanguage}
+                className="flex items-center text-white hover:text-green-400 transition-colors font-orbitron font-medium"
+              >
+                <Languages className="w-4 h-4 mr-1" />
+                {language === 'en' ? 'TR' : 'EN'}
+              </button>
             </div>
           </div>
         </div>
@@ -138,18 +358,14 @@ export default function HomePage() {
 
             <div className="space-y-6">
               <div>
-                <h3 className="text-green-600 font-semibold text-lg mb-2">Welcome to WHOLEGREEN</h3>
+                <h3 className="text-green-600 font-semibold text-lg mb-2">{t.hero.welcome}</h3>
                 <h2 className="text-4xl font-bold text-gray-900 mb-4 font-orbitron">
-                  Premium Microgreen Technologies
-                  <br />
-                  <span className="text-gray-600 text-2xl">for sustainable future</span>
+                  {t.hero.mission}
                 </h2>
               </div>
 
               <p className="text-gray-600 leading-relaxed">
-                We specialize in cutting-edge agricultural technologies including microgreen production, indoor
-                agriculture systems, and space agriculture solutions. Our innovative approaches combine precision
-                farming with sustainable practices to maximize yield while minimizing environmental impact.
+                {t.hero.description}
               </p>
 
               <div className="grid grid-cols-2 gap-4">
@@ -175,14 +391,70 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* About Us Section */}
+      <section id="about" className="py-20 bg-gradient-to-br from-gray-50 to-green-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h3 className="text-green-600 font-semibold text-lg mb-2">{t.about.title}</h3>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 font-orbitron">{t.about.subtitle}</h2>
+            <p className="text-2xl text-green-600 font-medium mb-8 font-orbitron">{t.about.tagline}</p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Left Column - Content */}
+            <div className="space-y-8">
+              <div>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                  {t.about.description}
+                </p>
+
+                <ul className="space-y-3 mb-8">
+                  {t.about.features.map((feature, index) => (
+                    <li key={index} className="flex items-start">
+                      <div className="w-2 h-2 bg-green-500 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                      <span className="text-gray-700 text-lg">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                  {t.about.goal}
+                </p>
+
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  {t.about.priority}
+                </p>
+              </div>
+            </div>
+
+            {/* Right Column - Mission */}
+            <div>
+              <Card className="border-0 shadow-xl bg-white">
+                <CardContent className="p-8">
+                  <div className="text-center mb-6">
+                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Leaf className="w-8 h-8 text-green-600" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4 font-orbitron">{t.about.mission.title}</h3>
+                  </div>
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    {t.about.mission.content}
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
-      <section id="services" className="py-20 bg-gray-50">
+      <section id="services" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h3 className="text-green-600 font-semibold text-lg mb-2">Our Services</h3>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 font-orbitron">What Exactly We Do?</h2>
+            <h3 className="text-green-600 font-semibold text-lg mb-2">{t.services.title}</h3>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 font-orbitron">{t.services.subtitle}</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              We provide comprehensive agricultural technology solutions
+              {t.services.description}
             </p>
           </div>
 
@@ -190,48 +462,48 @@ export default function HomePage() {
             <Card className="bg-gradient-to-br from-green-400 to-emerald-500 text-white hover:shadow-xl transition-all duration-300">
               <CardContent className="p-8 text-center">
                 <Microscope className="w-12 h-12 mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2 font-orbitron">Microgreen Production</h3>
-                <p className="text-green-100">Advanced cultivation systems for premium microgreens</p>
+                <h3 className="text-xl font-bold mb-2 font-orbitron">{t.services.microgreen.title}</h3>
+                <p className="text-green-100">{t.services.microgreen.description}</p>
               </CardContent>
             </Card>
 
             <Card className="bg-gradient-to-br from-blue-400 to-cyan-500 text-white hover:shadow-xl transition-all duration-300">
               <CardContent className="p-8 text-center">
                 <Sprout className="w-12 h-12 mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2 font-orbitron">Indoor Agriculture</h3>
-                <p className="text-blue-100">Controlled environment farming solutions</p>
+                <h3 className="text-xl font-bold mb-2 font-orbitron">{t.services.indoor.title}</h3>
+                <p className="text-blue-100">{t.services.indoor.description}</p>
               </CardContent>
             </Card>
 
             <Card className="bg-gradient-to-br from-purple-400 to-pink-500 text-white hover:shadow-xl transition-all duration-300">
               <CardContent className="p-8 text-center">
                 <Rocket className="w-12 h-12 mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2 font-orbitron">Space Agriculture</h3>
-                <p className="text-purple-100">Extraterrestrial farming technologies</p>
+                <h3 className="text-xl font-bold mb-2 font-orbitron">{t.services.space.title}</h3>
+                <p className="text-purple-100">{t.services.space.description}</p>
               </CardContent>
             </Card>
 
             <Card className="bg-gradient-to-br from-orange-400 to-red-500 text-white hover:shadow-xl transition-all duration-300">
               <CardContent className="p-8 text-center">
                 <TrendingUp className="w-12 h-12 mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2 font-orbitron">Precision Farming</h3>
-                <p className="text-orange-100">IoT-enabled monitoring systems</p>
+                <h3 className="text-xl font-bold mb-2 font-orbitron">{t.services.precision.title}</h3>
+                <p className="text-orange-100">{t.services.precision.description}</p>
               </CardContent>
             </Card>
 
             <Card className="bg-gradient-to-br from-teal-400 to-green-500 text-white hover:shadow-xl transition-all duration-300">
               <CardContent className="p-8 text-center">
                 <Beaker className="w-12 h-12 mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2 font-orbitron">Hydroponics Systems</h3>
-                <p className="text-teal-100">Soil-free growing technology</p>
+                <h3 className="text-xl font-bold mb-2 font-orbitron">{t.services.hydroponics.title}</h3>
+                <p className="text-teal-100">{t.services.hydroponics.description}</p>
               </CardContent>
             </Card>
 
             <Card className="bg-gradient-to-br from-indigo-400 to-purple-500 text-white hover:shadow-xl transition-all duration-300">
               <CardContent className="p-8 text-center">
                 <Globe className="w-12 h-12 mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2 font-orbitron">Agricultural Consulting</h3>
-                <p className="text-indigo-100">Expert technical consultation</p>
+                <h3 className="text-xl font-bold mb-2 font-orbitron">{t.services.consulting.title}</h3>
+                <p className="text-indigo-100">{t.services.consulting.description}</p>
               </CardContent>
             </Card>
           </div>
@@ -254,27 +526,27 @@ export default function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center text-white">
             <div>
               <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">150</div>
-              <div className="text-gray-300">Happy Clients</div>
+              <div className="text-gray-300">{t.stats.clients}</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">2.5K</div>
-              <div className="text-gray-300">Systems Installed</div>
+              <div className="text-gray-300">{t.stats.systems}</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">50M</div>
-              <div className="text-gray-300">Plants Grown</div>
+              <div className="text-gray-300">{t.stats.plants}</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">12</div>
-              <div className="text-gray-300">Years of Exp</div>
+              <div className="text-gray-300">{t.stats.experience}</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">25</div>
-              <div className="text-gray-300">Specialists</div>
+              <div className="text-gray-300">{t.stats.specialists}</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">18</div>
-              <div className="text-gray-300">Tech Awards</div>
+              <div className="text-gray-300">{t.stats.awards}</div>
             </div>
           </div>
         </div>
@@ -284,11 +556,10 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h3 className="text-green-600 font-semibold text-lg mb-2">Our Products</h3>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 font-orbitron">Premium Microgreens</h2>
+            <h3 className="text-green-600 font-semibold text-lg mb-2">{t.products.title}</h3>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 font-orbitron">{t.products.subtitle}</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Discover our range of premium microgreen varieties, each with unique flavor profiles and nutritional
-              benefits
+              {t.products.description}
             </p>
           </div>
 
@@ -355,10 +626,10 @@ export default function HomePage() {
       <section id="team" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h3 className="text-green-600 font-semibold text-lg mb-2">Our Staff</h3>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 font-orbitron">Who We Are?</h2>
+            <h3 className="text-green-600 font-semibold text-lg mb-2">{t.team.title}</h3>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 font-orbitron">{t.team.subtitle}</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Meet our amazing team of agricultural scientists and technology experts
+              {t.team.description}
             </p>
           </div>
 
@@ -368,10 +639,10 @@ export default function HomePage() {
                 <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-12 h-12 text-green-600" />
                 </div>
-                <h3 className="text-xl font-bold mb-2 font-orbitron">Dr. Sarah Chen</h3>
-                <p className="text-green-600 font-medium mb-3">Agricultural Scientist, Microgreen Specialist</p>
+                <h3 className="text-xl font-bold mb-2 font-orbitron">{t.team.sarah.name}</h3>
+                <p className="text-green-600 font-medium mb-3">{t.team.sarah.role}</p>
                 <p className="text-gray-600 text-sm">
-                  Leading expert in microgreen cultivation with 15+ years of research experience
+                  {t.team.sarah.description}
                 </p>
               </CardContent>
             </Card>
@@ -381,10 +652,10 @@ export default function HomePage() {
                 <div className="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Rocket className="w-12 h-12 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-bold mb-2 font-orbitron">Dr. Michael Torres</h3>
-                <p className="text-blue-600 font-medium mb-3">Space Agriculture Engineer</p>
+                <h3 className="text-xl font-bold mb-2 font-orbitron">{t.team.michael.name}</h3>
+                <p className="text-blue-600 font-medium mb-3">{t.team.michael.role}</p>
                 <p className="text-gray-600 text-sm">
-                  Pioneer in extraterrestrial farming technologies and closed-loop systems
+                  {t.team.michael.description}
                 </p>
               </CardContent>
             </Card>
@@ -394,10 +665,10 @@ export default function HomePage() {
                 <div className="w-24 h-24 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Beaker className="w-12 h-12 text-purple-600" />
                 </div>
-                <h3 className="text-xl font-bold mb-2 font-orbitron">Dr. Emily Rodriguez</h3>
-                <p className="text-purple-600 font-medium mb-3">Indoor Agriculture Systems Designer</p>
+                <h3 className="text-xl font-bold mb-2 font-orbitron">{t.team.emily.name}</h3>
+                <p className="text-purple-600 font-medium mb-3">{t.team.emily.role}</p>
                 <p className="text-gray-600 text-sm">
-                  Specialist in controlled environment agriculture and hydroponic systems
+                  {t.team.emily.description}
                 </p>
               </CardContent>
             </Card>
@@ -408,14 +679,13 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-green-600 to-emerald-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-4 font-orbitron">Ready to Transform Your Agriculture?</h2>
+          <h2 className="text-4xl font-bold mb-4 font-orbitron">{t.cta.title}</h2>
           <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
-            Contact us today to learn how our advanced agricultural technologies can revolutionize your farming
-            operations
+            {t.cta.description}
           </p>
           <Link href="/contact">
             <Button size="lg" variant="secondary" className="bg-white text-green-600 hover:bg-gray-100">
-              Get Started Today
+              {t.cta.button}
             </Button>
           </Link>
         </div>
