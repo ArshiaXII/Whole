@@ -228,9 +228,11 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-gray-900">Address</h3>
                       <p className="text-gray-600">
-                        İstanbul, Türkiye
+                        Ayazağa Mah. Şehit Naci Canan Tuncer Sk. No: 35/1A
                         <br />
-                        Sustainable Urban Agriculture Center
+                        Sarıyer / İstanbul
+                        <br />
+                        Türkiye
                       </p>
                     </div>
                   </div>
@@ -324,7 +326,7 @@ export default function ContactPage() {
               </div>
               <div className="flex space-x-4 mt-2">
                 <MapPin className="h-5 w-5 text-green-400" />
-                <span className="text-gray-300">İstanbul, Türkiye</span>
+                <span className="text-gray-300">Ayazağa Mah. Şehit Naci Canan Tuncer Sk. No: 35/1A, Sarıyer / İstanbul</span>
               </div>
             </div>
 

@@ -333,11 +333,11 @@ export default function HomePage() {
           <div className="mb-6 animate-[slideUp_1.5s_ease-out_1s_both]">
             <Image src="/images/wholegreen-logo.png" alt="WHOLEGREEN" width={400} height={80} className="mx-auto" />
           </div>
-          <p className="text-xl md:text-2xl text-gray-200 animate-[slideUp_1.5s_ease-out_1.5s_both]">
-            Premium Microgreen Technologies
+          <p className="text-2xl md:text-4xl font-bold text-black drop-shadow-lg animate-[slideUp_1.5s_ease-out_1.5s_both] font-orbitron">
+            Gelecek Şehirde Filizleniyor
           </p>
-          <p className="text-lg text-gray-300 mt-2 animate-[slideUp_1.5s_ease-out_2s_both]">
-            Profesyonel mutfaklar için
+          <p className="text-xl md:text-2xl text-green-300 mt-4 font-semibold drop-shadow-md animate-[slideUp_1.5s_ease-out_2s_both]">
+            Sürdürülebilir Kentsel Tarım
           </p>
         </div>
       </section>
