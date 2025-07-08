@@ -89,21 +89,21 @@ const content = {
       }
     },
     about: {
-      title: "About Us",
+      title: "Our Vision",
       subtitle: "Whole Green Tarım A.Ş.",
-      tagline: "Bringing Nature to the City",
-      description: "Whole Green Tarım A.Ş. consists of a professional team that is a pioneer of sustainable and modern agriculture in the city. Our Istanbul-based company combines:",
+      tagline: "Redesigning Agriculture",
+      description: "We're not improving agriculture, we're completely redesigning it. In a world where traditional methods are no longer sustainable, we aim to make nature-protecting, high-nutritional, and accessible food possible for everyone.",
       features: [
-        "Scientific production with agricultural engineering",
-        "Strategic management with business expertise",
-        "Strong brand creation with advertising",
-        "Technological innovation with aviation vision"
+        "We're changing not just production methods, but how people view food",
+        "Future agriculture is based on intelligence, not soil",
+        "Real change starts not just by leaving the old behind, but by questioning why it was wrong",
+        "A healthier future is possible with smarter agriculture"
       ],
-      goal: "Our goal is to produce the most hygienic, fresh and healthy vegetables that can be consumed without washing in the city, with minimum space and maximum efficiency, and deliver them to tables.",
-      priority: "Our biggest priority is to provide everyone with access to quality and safe food with a system that extends from major suppliers in Turkey and Europe to the end consumer.",
+      goal: "We prove that producing more nutrition with fewer resources is possible. We're building a sustainable agriculture model that reduces water consumption and carbon footprint by 95%, doesn't exploit nature, and prioritizes human health.",
+      priority: "Using smart agricultural technologies, we utilize water, energy, and space most efficiently; ensuring plants are harvested and consumed when their nutritional values are at their peak. We aim to be pioneers of a healthier and more conscious future by changing not just production, but eating habits.",
       mission: {
         title: "Our Mission",
-        content: "To show that modern agriculture is possible in the city, to ensure that everyone has access to fresh food based on sustainability, hygiene and quality. To increase efficiency with vertical farming technologies and use natural resources most efficiently. Our aim is to bring the food of the future to the city today and offer people a healthy life."
+        content: "As WholeGreen, we're here to make nutrition most efficient for everyone. By harmonizing technology and nature, we're building tomorrow's food systems today."
       }
     },
     cta: {
@@ -189,21 +189,21 @@ const content = {
       }
     },
     about: {
-      title: "Hakkımızda",
+      title: "Vizyonumuz",
       subtitle: "Whole Green Tarım A.Ş.",
-      tagline: "Doğayı Şehre Taşıyoruz",
-      description: "Whole Green Tarım A.Ş., şehirde sürdürülebilir ve modern tarımın öncüsü olan profesyonel bir ekipten oluşur. İstanbul merkezli şirketimiz;",
+      tagline: "Tarımı Yeniden Tasarlıyoruz",
+      description: "Tarımı geliştirmiyoruz, tamamen yeniden tasarlıyoruz. Geleneksel yöntemlerin artık sürdürülebilir olmadığı bu dünyada, doğayı koruyan, besin değeri yüksek ve erişilebilir gıdayı herkes için mümkün kılmayı hedefliyoruz.",
       features: [
-        "Ziraat mühendisliğiyle bilimsel üretim",
-        "İşletme uzmanlığıyla stratejik yönetim",
-        "Reklamcılıkla güçlü marka yaratımı",
-        "Ve havacılık vizyonuyla teknolojik inovasyonu"
+        "Sadece üretim biçimini değil, insanların gıdaya bakışını da değiştiriyoruz",
+        "Geleceğin tarımı, toprağa değil, zekâya dayanıyor",
+        "Gerçek değişim, sadece eskiyi geride bırakmakla değil, onun neden yanlış olduğunu sorgulamakla başlar",
+        "Daha sağlıklı bir gelecek, daha akıllı bir tarımla mümkün"
       ],
-      goal: "Hedefimiz; şehirde en hijyenik, yıkamadan tüketilebilen, taze ve sağlıklı sebzeleri minimum alanda, maksimum verimle üretip sofralara ulaştırmak.",
-      priority: "Türkiye ve Avrupa'da büyük tedarikçilerden başlayarak, nihai tüketiciye kadar uzanan bir sistemle; herkese kaliteli ve güvenli gıda erişimi sağlamak en büyük önceliğimiz.",
+      goal: "Daha az kaynakla, daha fazla besin üretmenin mümkün olduğunu kanıtlıyoruz. Su tüketimini ve karbon ayak izini %95 azaltan, doğayı sömürmeyen ve insan sağlığını önceliklendiren sürdürülebilir bir tarım modeli inşa ediyoruz.",
+      priority: "Akıllı tarım teknolojileriyle suyu, enerjiyi ve alanı en verimli şekilde kullanıyor; bitkilerin besin değerlerinin zirvede olduğu zamanda hasat edip tüketilmesini sağlıyoruz. Sadece üretimi değil, beslenme alışkanlıklarını da değiştirerek, daha sağlıklı ve bilinçli bir geleceğin öncüsü olmayı hedefliyoruz.",
       mission: {
         title: "Misyonumuz",
-        content: "Şehirde modern tarımın mümkün olduğunu göstermek, sürdürülebilirlik, hijyen ve kaliteyi temel alarak herkesin taze gıdaya ulaşmasını sağlamak. Dikey tarım teknolojileriyle verimliliği artırmak ve doğal kaynakları en verimli şekilde kullanmak. Amacımız; geleceğin gıdasını bugünden şehre taşımak ve insanlara sağlıklı bir yaşam sunmak."
+        content: "WholeGreen olarak, beslenmeyi herkes için en verimli hâle getirmek için buradayız. Teknoloji ve doğayı harmanlayarak, geleceğin gıda sistemlerini bugünden inşa ediyoruz."
       }
     },
     cta: {
@@ -571,7 +571,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="font-bold text-lg mb-2">Perilla</h3>
                 <p className="text-gray-600 text-sm mb-4">Anason aromalı premium mikrofiliz</p>
-                <Badge className="bg-purple-100 text-purple-800">41 kcal/100g</Badge>
+                <Badge className="bg-purple-100 text-purple-800">Premium Kalite</Badge>
               </CardContent>
             </Card>
 
@@ -582,7 +582,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="font-bold text-lg mb-2">Daikon Radish</h3>
                 <p className="text-gray-600 text-sm mb-4">Japon mutfağının vazgeçilmezi</p>
-                <Badge className="bg-green-100 text-green-800">28 kcal/100g</Badge>
+                <Badge className="bg-green-100 text-green-800">Organik</Badge>
               </CardContent>
             </Card>
 
@@ -593,7 +593,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="font-bold text-lg mb-2">Amaranth</h3>
                 <p className="text-gray-600 text-sm mb-4">Çarpıcı kırmızı renk</p>
-                <Badge className="bg-red-100 text-red-800">35 kcal/100g</Badge>
+                <Badge className="bg-red-100 text-red-800">Antik Süpergıda</Badge>
               </CardContent>
             </Card>
 
@@ -604,7 +604,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="font-bold text-lg mb-2">Red Radish</h3>
                 <p className="text-gray-600 text-sm mb-4">Keskin biberimsi tat</p>
-                <Badge className="bg-orange-100 text-orange-800">32 kcal/100g</Badge>
+                <Badge className="bg-orange-100 text-orange-800">Yüksek Vitamin</Badge>
               </CardContent>
             </Card>
           </div>

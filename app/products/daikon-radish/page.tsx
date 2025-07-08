@@ -20,8 +20,7 @@ const productData = {
     "/images/products/daikon-radish-2.jpg",
     "/images/products/daikon-radish-3.jpg"
   ],
-  price: "$19.99",
-  unit: "per 4oz container",
+
   rating: 4.8,
   harvestTime: "7-14 days",
   tastingProfile: "A clean, spicy, and peppery flavor, similar to a mature radish but more delicate. The crisp texture provides a satisfying crunch that enhances any dish.",
@@ -138,12 +137,11 @@ export default function DaikonRadishPage() {
               </div>
             </div>
             
-            <div className="text-4xl font-bold mb-2">{productData.price}</div>
-            <div className="text-xl text-green-200 mb-8">{productData.unit}</div>
+
             
             <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg font-orbitron font-medium">
               <Link href="/contact" className="flex items-center">
-                Order Now
+                Daha Fazla Bilgi
                 <ArrowLeft className="ml-2 h-5 w-5 rotate-180" />
               </Link>
             </Button>
@@ -264,7 +262,7 @@ export default function DaikonRadishPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100 hover:shadow-lg transition-all font-orbitron font-medium">
               <Link href="/contact" className="flex items-center">
-                Place Order
+                İletişime Geçin
                 <ArrowLeft className="ml-2 h-4 w-4 rotate-180" />
               </Link>
             </Button>

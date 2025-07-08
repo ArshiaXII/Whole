@@ -20,8 +20,7 @@ const productData = {
     "/images/products/perilla-2.jpg",
     "/images/products/perilla-3.jpg"
   ],
-  price: "$24.99",
-  unit: "per 4oz container",
+
   rating: 4.9,
   harvestTime: "14-21 days",
   tastingProfile: "A complex and unique flavor with notes of mint, basil, and anise/licorice. This sophisticated herb offers an aromatic experience that's both familiar and exotic, perfect for adventurous culinary applications.",
@@ -138,12 +137,11 @@ export default function PerillaPage() {
               </div>
             </div>
             
-            <div className="text-4xl font-bold mb-2">{productData.price}</div>
-            <div className="text-xl text-purple-200 mb-8">{productData.unit}</div>
+
             
             <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 text-lg">
               <Link href="/contact" className="flex items-center">
-                Order Now
+                Daha Fazla Bilgi
                 <ArrowLeft className="ml-2 h-5 w-5 rotate-180" />
               </Link>
             </Button>
@@ -264,7 +262,7 @@ export default function PerillaPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 hover:shadow-lg transition-all">
               <Link href="/contact" className="flex items-center">
-                Place Order
+                İletişime Geçin
                 <ArrowLeft className="ml-2 h-4 w-4 rotate-180" />
               </Link>
             </Button>

@@ -68,19 +68,19 @@ export default function ContactPage() {
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <Link href="/" className="text-gray-500 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">
-                  Home
+                  Ana Sayfa
                 </Link>
                 <Link
                   href="/products"
                   className="text-gray-500 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Products
+                  Ürünler
                 </Link>
                 <Link
                   href="/contact"
                   className="text-gray-900 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Contact
+                  İletişim
                 </Link>
               </div>
             </div>
@@ -91,11 +91,11 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-green-50 to-emerald-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Badge className="mb-4 bg-green-100 text-green-800 hover:bg-green-200">Get in Touch</Badge>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Contact WholeGreen</h1>
+          <Badge className="mb-4 bg-green-100 text-green-800 hover:bg-green-200">İletişime Geçin</Badge>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">WholeGreen İletişim</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to learn more about our sustainable urban agriculture solutions? We're here to help with questions,
-            consultations, and custom growing solutions.
+            Sürdürülebilir kentsel tarım çözümlerimiz hakkında daha fazla bilgi edinmeye hazır mısınız? Sorularınız,
+            danışmanlık ve özel yetiştirme çözümleri için buradayız.
           </p>
         </div>
       </section>
@@ -108,23 +108,23 @@ export default function ContactPage() {
             <div>
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl text-gray-900">Send us a Message</CardTitle>
-                  <p className="text-gray-600">Fill out the form below and we'll get back to you within 24 hours.</p>
+                  <CardTitle className="text-2xl text-gray-900">Bize Mesaj Gönderin</CardTitle>
+                  <p className="text-gray-600">Aşağıdaki formu doldurun, 24 saat içinde size geri döneceğiz.</p>
                 </CardHeader>
                 <CardContent>
                   {isSubmitted ? (
                     <div className="text-center py-8">
                       <CheckCircle className="w-16 h-16 text-green-600 mx-auto mb-4" />
-                      <h3 className="text-xl font-semibold text-gray-900 mb-2">Message Sent!</h3>
+                      <h3 className="text-xl font-semibold text-gray-900 mb-2">Mesaj Gönderildi!</h3>
                       <p className="text-gray-600">
-                        Thank you for contacting us. We'll get back to you within 24 hours.
+                        Bizimle iletişime geçtiğiniz için teşekkür ederiz. 24 saat içinde size geri döneceğiz.
                       </p>
                     </div>
                   ) : (
                     <form onSubmit={handleSubmit} className="space-y-6">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
-                          <Label htmlFor="name">Full Name *</Label>
+                          <Label htmlFor="name">Ad Soyad *</Label>
                           <Input
                             id="name"
                             name="name"
@@ -136,7 +136,7 @@ export default function ContactPage() {
                           />
                         </div>
                         <div>
-                          <Label htmlFor="email">Email Address *</Label>
+                          <Label htmlFor="email">E-posta Adresi *</Label>
                           <Input
                             id="email"
                             name="email"
@@ -151,7 +151,7 @@ export default function ContactPage() {
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
-                          <Label htmlFor="phone">Phone Number</Label>
+                          <Label htmlFor="phone">Telefon Numarası</Label>
                           <Input
                             id="phone"
                             name="phone"
@@ -162,7 +162,7 @@ export default function ContactPage() {
                           />
                         </div>
                         <div>
-                          <Label htmlFor="company">Company/Restaurant</Label>
+                          <Label htmlFor="company">Şirket/Restoran</Label>
                           <Input
                             id="company"
                             name="company"
@@ -175,7 +175,7 @@ export default function ContactPage() {
                       </div>
 
                       <div>
-                        <Label htmlFor="message">Message *</Label>
+                        <Label htmlFor="message">Mesaj *</Label>
                         <Textarea
                           id="message"
                           name="message"
@@ -184,13 +184,13 @@ export default function ContactPage() {
                           value={formData.message}
                           onChange={handleChange}
                           className="mt-1"
-                          placeholder="Tell us about your interest in urban agriculture, sustainability questions, or any inquiries you have..."
+                          placeholder="Kentsel tarıma olan ilginiz, sürdürülebilirlik soruları veya sahip olduğunuz herhangi bir soru hakkında bize anlatın..."
                         />
                       </div>
 
                       <Button type="submit" className="w-full bg-green-600 hover:bg-green-700 text-white">
                         <Send className="w-4 h-4 mr-2" />
-                        Send Message
+                        Mesaj Gönder
                       </Button>
                     </form>
                   )}
@@ -202,15 +202,15 @@ export default function ContactPage() {
             <div className="space-y-8">
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-xl text-gray-900">Contact Information</CardTitle>
+                  <CardTitle className="text-xl text-gray-900">İletişim Bilgileri</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="flex items-start gap-4">
                     <Phone className="w-6 h-6 text-green-600 mt-1" />
                     <div>
-                      <h3 className="font-semibold text-gray-900">Phone</h3>
+                      <h3 className="font-semibold text-gray-900">Telefon</h3>
                       <p className="text-gray-600">+90 (212) 123-4567</p>
-                      <p className="text-sm text-gray-500">Available for consultations</p>
+                      <p className="text-sm text-gray-500">Danışmanlık için müsait</p>
                     </div>
                   </div>
 
@@ -331,28 +331,28 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+              <h3 className="text-lg font-semibold mb-4">Hızlı Bağlantılar</h3>
               <ul className="space-y-2">
                 <li>
                   <Link href="/" className="text-gray-300 hover:text-green-400">
-                    Home
+                    Ana Sayfa
                   </Link>
                 </li>
                 <li>
                   <Link href="/products" className="text-gray-300 hover:text-green-400">
-                    Products
+                    Ürünler
                   </Link>
                 </li>
                 <li>
                   <Link href="/contact" className="text-gray-300 hover:text-green-400">
-                    Contact
+                    İletişim
                   </Link>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-4">Products</h3>
+              <h3 className="text-lg font-semibold mb-4">Ürünler</h3>
               <ul className="space-y-2">
                 <li>
                   <Link href="/products/perilla" className="text-gray-300 hover:text-green-400">

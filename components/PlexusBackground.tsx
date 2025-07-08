@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef, useCallback } from 'react'
+import { useEffect, useRef, useCallback, useState } from 'react'
 
 interface Node {
   x: number
@@ -13,12 +13,18 @@ interface Node {
 }
 
 export default function PlexusBackground() {
+  const [isClient, setIsClient] = useState(false)
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const animationRef = useRef<number>()
   const nodesRef = useRef<Node[]>([])
   const mouseRef = useRef({ x: 0, y: 0, isActive: false })
   const isMobileRef = useRef(false)
   const touchTimeoutRef = useRef<NodeJS.Timeout>()
+
+  // Ensure this only runs on client side
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   // Configuration
   const config = {
@@ -37,6 +43,7 @@ export default function PlexusBackground() {
 
   // Detect mobile device
   const detectMobile = useCallback(() => {
+    if (typeof window === 'undefined') return false
     return window.innerWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
   }, [])
 
@@ -233,16 +240,18 @@ export default function PlexusBackground() {
   }, [])
 
   useEffect(() => {
+    if (!isClient) return
+
     const canvas = canvasRef.current
     if (!canvas) return
-    
+
     // Setup
     isMobileRef.current = detectMobile()
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
-    
+
     initializeNodes(canvas)
-    
+
     // Event listeners
     window.addEventListener('resize', handleResize)
     if (!isMobileRef.current) {
@@ -251,10 +260,10 @@ export default function PlexusBackground() {
       window.addEventListener('touchstart', handleTouch)
       window.addEventListener('touchmove', handleTouch)
     }
-    
+
     // Start animation
     animate()
-    
+
     // Cleanup
     return () => {
       if (animationRef.current) {
@@ -268,7 +277,11 @@ export default function PlexusBackground() {
       window.removeEventListener('touchstart', handleTouch)
       window.removeEventListener('touchmove', handleTouch)
     }
-  }, [detectMobile, initializeNodes, handleResize, handleMouseMove, handleTouch, animate])
+  }, [isClient, detectMobile, initializeNodes, handleResize, handleMouseMove, handleTouch, animate])
+
+  if (!isClient) {
+    return null
+  }
 
   return (
     <canvas

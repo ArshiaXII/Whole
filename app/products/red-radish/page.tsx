@@ -20,8 +20,7 @@ const productData = {
     "/images/products/red-radish-2.jpg",
     "/images/products/red-radish-3.jpg"
   ],
-  price: "$21.99",
-  unit: "per 4oz container",
+
   rating: 4.8,
   harvestTime: "7-12 days",
   tastingProfile: "An intense and robust peppery flavor that truly stands out. Spicier than Daikon Radish, these microgreens deliver a bold, fiery kick that awakens the palate and adds excitement to any dish.",
@@ -69,20 +68,20 @@ export default function RedRadishPage() {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <Link href="/" className="text-gray-500 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                  Home
+                <Link href="/" className="text-gray-500 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors font-orbitron">
+                  Ana Sayfa
                 </Link>
                 <Link
                   href="/products"
-                  className="text-green-600 bg-green-50 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-green-600 bg-green-50 px-3 py-2 rounded-md text-sm font-medium font-orbitron"
                 >
-                  Products
+                  Ürünler
                 </Link>
                 <Link
                   href="/contact"
-                  className="text-gray-500 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                  className="text-gray-500 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors font-orbitron"
                 >
-                  Contact
+                  İletişim
                 </Link>
               </div>
             </div>
@@ -110,7 +109,7 @@ export default function RedRadishPage() {
               className="inline-flex items-center text-red-200 hover:text-white mb-6 transition-colors"
             >
               <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Products
+              Ürünlere Geri Dön
             </Link>
             
             <div className="mb-6">
@@ -138,12 +137,11 @@ export default function RedRadishPage() {
               </div>
             </div>
             
-            <div className="text-4xl font-bold mb-2">{productData.price}</div>
-            <div className="text-xl text-red-200 mb-8">{productData.unit}</div>
+
             
             <Button size="lg" className="bg-red-700 hover:bg-red-800 text-white px-8 py-4 text-lg">
               <Link href="/contact" className="flex items-center">
-                Order Now
+                Daha Fazla Bilgi
                 <ArrowLeft className="ml-2 h-5 w-5 rotate-180" />
               </Link>
             </Button>
@@ -257,20 +255,20 @@ export default function RedRadishPage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-red-700 to-rose-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Experience Red Radish?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-orbitron">Red Radish Deneyimi Yaşamaya Hazır mısınız?</h2>
           <p className="text-xl text-red-100 mb-8 leading-relaxed">
-            Contact us today to place your order or discuss custom growing requirements for your restaurant or business.
+            Profesyonel mutfaklar için özel yetiştirme gereksinimlerinizi görüşmek üzere bizimle iletişime geçin.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-red-700 hover:bg-gray-100 hover:shadow-lg transition-all">
               <Link href="/contact" className="flex items-center">
-                Place Order
+                İletişime Geçin
                 <ArrowLeft className="ml-2 h-4 w-4 rotate-180" />
               </Link>
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-red-700 transition-all">
               <Link href="/products" className="flex items-center">
-                View Other Products
+                Diğer Ürünleri Görüntüle
               </Link>
             </Button>
           </div>

@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 declare global {
   interface Window {
@@ -9,7 +9,14 @@ declare global {
 }
 
 export default function ParticleBackground() {
+  const [isClient, setIsClient] = useState(false)
+
   useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  useEffect(() => {
+    if (!isClient) return
     const initializeParticles = () => {
       if (typeof window !== "undefined" && window.tsParticles) {
         window.tsParticles.load("tsparticles", {
@@ -88,7 +95,11 @@ export default function ParticleBackground() {
         clearInterval(checkForTsParticles)
       }, 10000)
     }
-  }, [])
+  }, [isClient])
+
+  if (!isClient) {
+    return null
+  }
 
   return <div id="tsparticles"></div>
 }
