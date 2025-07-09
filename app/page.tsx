@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
-import { Leaf, Microscope, Sprout, Rocket, Users, TrendingUp, ChefHat, Beaker, Globe, Star, Languages } from "lucide-react"
+import { Leaf, Microscope, Sprout, Rocket, TrendingUp, ChefHat, Beaker, Globe, Star, Languages } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import LoadingScreen from "@/components/loading-screen"
@@ -18,7 +18,7 @@ const content = {
       products: "PRODUCTS",
       about: "ABOUT US",
       services: "SERVICES",
-      team: "TEAM",
+
       contacts: "CONTACTS"
     },
     hero: {
@@ -68,26 +68,7 @@ const content = {
       subtitle: "Premium Microgreens",
       description: "Discover our range of premium microgreen varieties, each with unique flavor profiles and nutritional benefits"
     },
-    team: {
-      title: "Our Staff",
-      subtitle: "Who We Are?",
-      description: "Meet our amazing team of agricultural scientists and technology experts",
-      sarah: {
-        name: "Dr. Sarah Chen",
-        role: "Agricultural Scientist, Microgreen Specialist",
-        description: "Leading expert in microgreen cultivation with 15+ years of research experience"
-      },
-      michael: {
-        name: "Dr. Michael Torres",
-        role: "Space Agriculture Engineer",
-        description: "Pioneer in extraterrestrial farming technologies and closed-loop systems"
-      },
-      emily: {
-        name: "Dr. Emily Rodriguez",
-        role: "Indoor Agriculture Systems Designer",
-        description: "Specialist in controlled environment agriculture and hydroponic systems"
-      }
-    },
+
     about: {
       title: "Our Vision",
       subtitle: "Whole Green Tarım A.Ş.",
@@ -118,7 +99,7 @@ const content = {
       products: "ÜRÜNLER",
       about: "HAKKIMIZDA",
       services: "HİZMETLER",
-      team: "EKİP",
+
       contacts: "İLETİŞİM"
     },
     hero: {
@@ -168,26 +149,7 @@ const content = {
       subtitle: "Premium Mikroyeşiller",
       description: "Her biri benzersiz lezzet profilleri ve beslenme faydaları olan premium mikroyeşil çeşitlerimizi keşfedin"
     },
-    team: {
-      title: "Ekibimiz",
-      subtitle: "Biz Kimiz?",
-      description: "Tarım bilimcileri ve teknoloji uzmanlarından oluşan harika ekibimizle tanışın",
-      sarah: {
-        name: "Dr. Sarah Chen",
-        role: "Tarım Bilimci, Mikroyeşil Uzmanı",
-        description: "15+ yıllık araştırma deneyimi olan mikroyeşil yetiştiriciliği alanında önde gelen uzman"
-      },
-      michael: {
-        name: "Dr. Michael Torres",
-        role: "Uzay Tarımı Mühendisi",
-        description: "Dünya dışı tarım teknolojileri ve kapalı döngü sistemleri alanında öncü"
-      },
-      emily: {
-        name: "Dr. Emily Rodriguez",
-        role: "İç Mekan Tarım Sistemleri Tasarımcısı",
-        description: "Kontrollü ortam tarımı ve hidroponik sistemler uzmanı"
-      }
-    },
+
     about: {
       title: "Vizyonumuz",
       subtitle: "Whole Green Tarım A.Ş.",
@@ -270,9 +232,7 @@ export default function HomePage() {
               <Link href="#services" className="text-white hover:text-green-400 transition-colors font-orbitron font-medium">
                 {t.nav.services}
               </Link>
-              <Link href="#team" className="text-white hover:text-green-400 transition-colors font-orbitron font-medium">
-                {t.nav.team}
-              </Link>
+
               <Link href="/contact" className="text-white hover:text-green-400 transition-colors font-orbitron font-medium">
                 {t.nav.contacts}
               </Link>
@@ -622,59 +582,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section id="team" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h3 className="text-green-600 font-semibold text-lg mb-2">{t.team.title}</h3>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 font-orbitron">{t.team.subtitle}</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              {t.team.description}
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="text-center hover:shadow-xl transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-12 h-12 text-green-600" />
-                </div>
-                <h3 className="text-xl font-bold mb-2 font-orbitron">{t.team.sarah.name}</h3>
-                <p className="text-green-600 font-medium mb-3">{t.team.sarah.role}</p>
-                <p className="text-gray-600 text-sm">
-                  {t.team.sarah.description}
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center hover:shadow-xl transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Rocket className="w-12 h-12 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-bold mb-2 font-orbitron">{t.team.michael.name}</h3>
-                <p className="text-blue-600 font-medium mb-3">{t.team.michael.role}</p>
-                <p className="text-gray-600 text-sm">
-                  {t.team.michael.description}
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center hover:shadow-xl transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="w-24 h-24 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Beaker className="w-12 h-12 text-purple-600" />
-                </div>
-                <h3 className="text-xl font-bold mb-2 font-orbitron">{t.team.emily.name}</h3>
-                <p className="text-purple-600 font-medium mb-3">{t.team.emily.role}</p>
-                <p className="text-gray-600 text-sm">
-                  {t.team.emily.description}
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-green-600 to-emerald-600 text-white">
