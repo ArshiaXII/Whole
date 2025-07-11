@@ -83,42 +83,38 @@ body {
   line-height: 1.2;
 }
 
-/* Montserrat Roman ExtraLight 200 - Your requested style */
-.montserrat-roman-extralight {
+/* Montserrat Variable Font - Your requested style */
+.montserrat-variable {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 200;
+  font-weight: 400;
   font-style: normal;
-  letter-spacing: 0.05em;
 }
 
-/* Responsive Montserrat Roman ExtraLight for different text sizes */
-.montserrat-roman-extralight-hero {
+/* Responsive Montserrat Variable for different text sizes */
+.montserrat-variable-hero {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 200;
+  font-weight: 400;
   font-style: normal;
-  letter-spacing: 0.05em;
   font-size: clamp(2rem, 5vw, 4rem);
   line-height: 1.1;
 }
 
-.montserrat-roman-extralight-heading {
+.montserrat-variable-heading {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 200;
+  font-weight: 400;
   font-style: normal;
-  letter-spacing: 0.03em;
   font-size: clamp(1.5rem, 3vw, 2.5rem);
   line-height: 1.2;
 }
 
-.montserrat-roman-extralight-text {
+.montserrat-variable-text {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 200;
+  font-weight: 400;
   font-style: normal;
-  letter-spacing: 0.02em;
   font-size: clamp(1rem, 2vw, 1.25rem);
   line-height: 1.4;
 }

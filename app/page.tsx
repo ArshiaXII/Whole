@@ -293,10 +293,10 @@ export default function HomePage() {
           <div className="mb-6 animate-[slideUp_1.5s_ease-out_1s_both]">
             <Image src="/images/wholegreen-logo.png" alt="WHOLEGREEN" width={400} height={80} className="mx-auto" />
           </div>
-          <p className="montserrat-roman-extralight-hero text-black drop-shadow-lg animate-[slideUp_1.5s_ease-out_1.5s_both]">
+          <p className="montserrat-variable-hero text-black drop-shadow-lg animate-[slideUp_1.5s_ease-out_1.5s_both]">
             Gelecek Şehirde Filizleniyor
           </p>
-          <p className="montserrat-roman-extralight-text text-green-300 mt-4 drop-shadow-md animate-[slideUp_1.5s_ease-out_2s_both]">
+          <p className="montserrat-variable-text text-green-300 mt-4 drop-shadow-md animate-[slideUp_1.5s_ease-out_2s_both]">
             Sürdürülebilir Kentsel Tarım
           </p>
         </div>
@@ -319,7 +319,7 @@ export default function HomePage() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-green-600 font-semibold text-lg mb-2">{t.hero.welcome}</h3>
-                <h2 className="montserrat-roman-extralight-heading text-gray-900 mb-4">
+                <h2 className="montserrat-variable-heading text-gray-900 mb-4">
                   {t.hero.mission}
                 </h2>
               </div>
@@ -356,8 +356,8 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h3 className="text-green-600 font-semibold text-lg mb-2">{t.about.title}</h3>
-            <h2 className="montserrat-roman-extralight-heading text-gray-900 mb-4">{t.about.subtitle}</h2>
-            <p className="montserrat-roman-extralight-text text-green-600 mb-8">{t.about.tagline}</p>
+            <h2 className="montserrat-variable-heading text-gray-900 mb-4">{t.about.subtitle}</h2>
+            <p className="montserrat-variable-text text-green-600 mb-8">{t.about.tagline}</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
