@@ -65,7 +65,7 @@ body {
 
 /* Montserrat Font Weight Utilities */
 .font-montserrat-thin { font-family: 'Montserrat', sans-serif; font-weight: 100; letter-spacing: 0.05em; }
-.font-montserrat-extralight { font-family: 'Montserrat', sans-serif; font-weight: 200; letter-spacing: 0.025em; }
+.font-montserrat-extralight { font-family: 'Montserrat', sans-serif; font-weight: 200; letter-spacing: 0.05em; }
 .font-montserrat-light { font-family: 'Montserrat', sans-serif; font-weight: 300; letter-spacing: 0.025em; }
 .font-montserrat-regular { font-family: 'Montserrat', sans-serif; font-weight: 400; }
 .font-montserrat-medium { font-family: 'Montserrat', sans-serif; font-weight: 500; }
@@ -83,40 +83,40 @@ body {
   line-height: 1.2;
 }
 
-/* Montserrat Roman Thin 100 - Your requested style */
-.montserrat-roman-thin {
+/* Montserrat Roman ExtraLight 200 - Your requested style */
+.montserrat-roman-extralight {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 100;
+  font-weight: 200;
   font-style: normal;
   letter-spacing: 0.05em;
 }
 
-/* Responsive Montserrat Roman for different text sizes */
-.montserrat-roman-thin-hero {
+/* Responsive Montserrat Roman ExtraLight for different text sizes */
+.montserrat-roman-extralight-hero {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 100;
+  font-weight: 200;
   font-style: normal;
   letter-spacing: 0.05em;
   font-size: clamp(2rem, 5vw, 4rem);
   line-height: 1.1;
 }
 
-.montserrat-roman-thin-heading {
+.montserrat-roman-extralight-heading {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 100;
+  font-weight: 200;
   font-style: normal;
   letter-spacing: 0.03em;
   font-size: clamp(1.5rem, 3vw, 2.5rem);
   line-height: 1.2;
 }
 
-.montserrat-roman-thin-text {
+.montserrat-roman-extralight-text {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 100;
+  font-weight: 200;
   font-style: normal;
   letter-spacing: 0.02em;
   font-size: clamp(1rem, 2vw, 1.25rem);
