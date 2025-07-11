@@ -1,40 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Orbitron:wght@400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Brand Font - Orbitron Integration */
+/* Brand Font - Montserrat Primary with Orbitron Accents */
 
-/* Apply Orbitron to all headings for strong visual hierarchy */
+/* Apply Montserrat to all headings for modern, clean hierarchy */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 700; /* Bold by default for headings */
-  letter-spacing: 0.025em; /* Slight letter spacing for better readability */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; /* Semi-bold by default for headings */
+  letter-spacing: -0.025em; /* Tight letter spacing for modern look */
 }
 
-/* Navigation links with Orbitron for brand consistency */
+/* Navigation links with Montserrat for clean readability */
 nav a,
 .nav-link,
 .navigation-item {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500; /* Medium weight for navigation */
   letter-spacing: 0.025em;
 }
 
-/* Primary buttons and CTAs with Orbitron */
+/* Primary buttons and CTAs with Montserrat */
 .primary-button,
 button[class*="bg-green"],
 button[class*="bg-red"],
 button[class*="bg-purple"],
 .btn-primary,
 .cta-button {
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 500; /* Medium weight for buttons */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; /* Semi-bold weight for buttons */
   letter-spacing: 0.025em;
 }
 
-/* Logo text styling */
+/* Logo text styling - Keep Orbitron for brand identity */
 .logo-text,
 .brand-name {
   font-family: 'Orbitron', sans-serif;
@@ -46,21 +46,81 @@ button[class*="bg-purple"],
 .badge,
 .tag,
 .label {
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   letter-spacing: 0.025em;
 }
 
-/* Ensure body text remains readable with standard fonts */
+/* Ensure body text uses Montserrat for consistency */
 body, p, .description, .content, .text-content {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   line-height: 1.6; /* Better readability for body text */
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: transparent;
+}
+
+/* Montserrat Font Weight Utilities */
+.font-montserrat-thin { font-family: 'Montserrat', sans-serif; font-weight: 100; letter-spacing: 0.05em; }
+.font-montserrat-extralight { font-family: 'Montserrat', sans-serif; font-weight: 200; letter-spacing: 0.025em; }
+.font-montserrat-light { font-family: 'Montserrat', sans-serif; font-weight: 300; letter-spacing: 0.025em; }
+.font-montserrat-regular { font-family: 'Montserrat', sans-serif; font-weight: 400; }
+.font-montserrat-medium { font-family: 'Montserrat', sans-serif; font-weight: 500; }
+.font-montserrat-semibold { font-family: 'Montserrat', sans-serif; font-weight: 600; }
+.font-montserrat-bold { font-family: 'Montserrat', sans-serif; font-weight: 700; }
+.font-montserrat-extrabold { font-family: 'Montserrat', sans-serif; font-weight: 800; }
+.font-montserrat-black { font-family: 'Montserrat', sans-serif; font-weight: 900; }
+
+/* Special Montserrat Thin 100 Style - Like in your image */
+.montserrat-thin-100 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  line-height: 1.2;
+}
+
+/* Montserrat Roman Thin 100 - Your requested style */
+.montserrat-roman-thin {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 0.05em;
+}
+
+/* Responsive Montserrat Roman for different text sizes */
+.montserrat-roman-thin-hero {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.1;
+}
+
+.montserrat-roman-thin-heading {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  line-height: 1.2;
+}
+
+.montserrat-roman-thin-text {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.4;
 }
 
 #tsparticles {

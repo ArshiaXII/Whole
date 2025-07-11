@@ -220,27 +220,27 @@ export default function HomePage() {
             </div>
 
             <div className="hidden md:flex items-center space-x-8">
-              <Link href="/" className="text-green-400 hover:text-green-300 transition-colors font-orbitron font-medium">
+              <Link href="/" className="text-green-400 hover:text-green-300 transition-colors font-montserrat font-medium">
                 {t.nav.home}
               </Link>
-              <Link href="/products" className="text-white hover:text-green-400 transition-colors font-orbitron font-medium">
+              <Link href="/products" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
                 {t.nav.products}
               </Link>
-              <Link href="#about" className="text-white hover:text-green-400 transition-colors font-orbitron font-medium">
+              <Link href="#about" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
                 {t.nav.about}
               </Link>
-              <Link href="#services" className="text-white hover:text-green-400 transition-colors font-orbitron font-medium">
+              <Link href="#services" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
                 {t.nav.services}
               </Link>
 
-              <Link href="/contact" className="text-white hover:text-green-400 transition-colors font-orbitron font-medium">
+              <Link href="/contact" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
                 {t.nav.contacts}
               </Link>
 
               {/* Language Toggle */}
               <button
                 onClick={toggleLanguage}
-                className="flex items-center text-white hover:text-green-400 transition-colors font-orbitron font-medium"
+                className="flex items-center text-white hover:text-green-400 transition-colors font-montserrat font-medium"
               >
                 <Languages className="w-4 h-4 mr-1" />
                 {language === 'en' ? 'TR' : 'EN'}
@@ -293,10 +293,10 @@ export default function HomePage() {
           <div className="mb-6 animate-[slideUp_1.5s_ease-out_1s_both]">
             <Image src="/images/wholegreen-logo.png" alt="WHOLEGREEN" width={400} height={80} className="mx-auto" />
           </div>
-          <p className="text-2xl md:text-4xl font-bold text-black drop-shadow-lg animate-[slideUp_1.5s_ease-out_1.5s_both] font-orbitron">
+          <p className="montserrat-roman-thin-hero text-black drop-shadow-lg animate-[slideUp_1.5s_ease-out_1.5s_both]">
             Gelecek Şehirde Filizleniyor
           </p>
-          <p className="text-xl md:text-2xl text-green-300 mt-4 font-semibold drop-shadow-md animate-[slideUp_1.5s_ease-out_2s_both]">
+          <p className="montserrat-roman-thin-text text-green-300 mt-4 drop-shadow-md animate-[slideUp_1.5s_ease-out_2s_both]">
             Sürdürülebilir Kentsel Tarım
           </p>
         </div>
@@ -319,7 +319,7 @@ export default function HomePage() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-green-600 font-semibold text-lg mb-2">{t.hero.welcome}</h3>
-                <h2 className="text-4xl font-bold text-gray-900 mb-4 font-orbitron">
+                <h2 className="montserrat-roman-thin-heading text-gray-900 mb-4">
                   {t.hero.mission}
                 </h2>
               </div>
@@ -356,8 +356,8 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h3 className="text-green-600 font-semibold text-lg mb-2">{t.about.title}</h3>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 font-orbitron">{t.about.subtitle}</h2>
-            <p className="text-2xl text-green-600 font-medium mb-8 font-orbitron">{t.about.tagline}</p>
+            <h2 className="montserrat-roman-thin-heading text-gray-900 mb-4">{t.about.subtitle}</h2>
+            <p className="montserrat-roman-thin-text text-green-600 mb-8">{t.about.tagline}</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

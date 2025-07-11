@@ -11,8 +11,11 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
+        'sans': ['Montserrat', 'sans-serif'], // Set Montserrat as default sans-serif
+        'montserrat': ['Montserrat', 'sans-serif'],
+        'montserrat-roman': ['Montserrat', 'sans-serif'],
         'orbitron': ['Orbitron', 'sans-serif'],
-        'brand': ['Orbitron', 'sans-serif'], // Alternative name for brand font
+        'brand': ['Orbitron', 'sans-serif'], // Keep Orbitron for brand elements
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
