@@ -3,11 +3,11 @@ import type { Metadata } from "next"
 export const productMetadata = {
   "daikon-radish": {
     title: "Daikon Radish Microgreens - Spicy & Crisp | WholeGreen",
-    description: "Premium Daikon Radish microgreens with clean, spicy flavor. Rich in Vitamin C, phosphorus, and potassium. Perfect for sushi, salads, and Asian cuisine. Order fresh microgreens today.",
-    keywords: "daikon radish microgreens, spicy microgreens, vitamin C, sushi garnish, Asian microgreens, fresh microgreens, premium microgreens",
+    description: "Daikon Radish microgreens with clean, spicy flavor. Rich in Vitamin C, phosphorus, and potassium. Perfect for sushi, salads, and Asian cuisine. Order fresh microgreens today.",
+    keywords: "daikon radish microgreens, spicy microgreens, vitamin C, sushi garnish, Asian microgreens, fresh microgreens",
     openGraph: {
       title: "Daikon Radish Microgreens - Spicy & Crisp",
-      description: "Premium Daikon Radish microgreens with clean, spicy flavor and crisp texture. Perfect for sushi, salads, and adding a kick to any dish.",
+      description: "Daikon Radish microgreens with clean, spicy flavor and crisp texture. Perfect for sushi, salads, and adding a kick to any dish.",
       images: ["/images/products/daikon-radish-hero.jpg"],
     },
   },
@@ -42,12 +42,12 @@ export const productMetadata = {
     },
   },
   "products": {
-    title: "Premium Microgreens Collection | WholeGreen",
-    description: "Discover our premium microgreens collection: Daikon Radish, Amaranth, Red Radish, and Perilla. Fresh, nutritious, and perfect for professional kitchens and gourmet cooking.",
-    keywords: "premium microgreens, fresh microgreens, gourmet microgreens, professional kitchen, nutritious microgreens, microgreens collection",
+    title: "Mikroyeşil Koleksiyonu | WholeGreen",
+    description: "Mikroyeşil koleksiyonumuzu keşfedin: Daikon Radish, Amaranth, Red Radish, ve Perilla. Taze, besleyici ve profesyonel mutfaklar için mükemmel.",
+    keywords: "mikroyeşiller, taze mikroyeşiller, gurme mikroyeşiller, profesyonel mutfak, besleyici mikroyeşiller, mikroyeşil koleksiyonu",
     openGraph: {
-      title: "Premium Microgreens Collection",
-      description: "Discover our carefully curated selection of premium microgreens, each variety chosen for exceptional flavor, nutritional value, and culinary versatility.",
+      title: "Mikroyeşil Koleksiyonu",
+      description: "Özenle seçilmiş mikroyeşil koleksiyonumuzu keşfedin, her çeşit olağanüstü lezzet, beslenme değeri ve mutfak çok yönlülüğü için seçilmiştir.",
       images: ["/images/products/collection-hero.jpg"],
     },
   },

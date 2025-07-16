@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
-import { Leaf, Microscope, Sprout, Rocket, TrendingUp, ChefHat, Beaker, Globe, Star, Languages } from "lucide-react"
+import { Leaf, Microscope, Sprout, Rocket, TrendingUp, ChefHat, Beaker, Globe, Star, Languages, Menu, X } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import LoadingScreen from "@/components/loading-screen"
@@ -24,7 +24,9 @@ const content = {
     hero: {
       welcome: "Welcome to WHOLEGREEN",
       mission: "Our mission is to demonstrate that modern urban agriculture is possible and to ensure everyone has access to fresh food based on the core principles of sustainability, hygiene, and quality.",
-      description: "We aim to increase efficiency and use natural resources optimally through vertical farming technologies. Our purpose is to bring the food of the future to the city today and offer people a healthier life."
+      description: "We aim to increase efficiency and use natural resources optimally through vertical farming technologies. Our purpose is to bring the food of the future to the city today and offer people a healthier life.",
+      mainTitle: "Future Sprouting in the City",
+      subtitle: "Sustainable Urban Agriculture"
     },
     services: {
       title: "Our Services",
@@ -65,7 +67,7 @@ const content = {
     },
     products: {
       title: "Our Products",
-      subtitle: "Premium Microgreens",
+      subtitle: "Mikroyeşiller",
       description: "Discover our range of premium microgreen varieties, each with unique flavor profiles and nutritional benefits"
     },
 
@@ -105,7 +107,9 @@ const content = {
     hero: {
       welcome: "WHOLEGREEN'e Hoş Geldiniz",
       mission: "Misyonumuz, modern kentsel tarımın mümkün olduğunu göstermek ve sürdürülebilirlik, hijyen ve kalite temel ilkeleri doğrultusunda herkesin taze gıdaya erişimini sağlamaktır.",
-      description: "Dikey tarım teknolojileri aracılığıyla verimliliği artırmayı ve doğal kaynakları optimal şekilde kullanmayı hedefliyoruz. Amacımız, geleceğin gıdasını bugün şehre getirmek ve insanlara daha sağlıklı bir yaşam sunmaktır."
+      description: "Dikey tarım teknolojileri aracılığıyla verimliliği artırmayı ve doğal kaynakları optimal şekilde kullanmayı hedefliyoruz. Amacımız, geleceğin gıdasını bugün şehre getirmek ve insanlara daha sağlıklı bir yaşam sunmaktır.",
+      mainTitle: "Gelecek Şehirde Filizleniyor",
+      subtitle: "Sürdürülebilir Kentsel Tarım"
     },
     services: {
       title: "Hizmetlerimiz",
@@ -146,8 +150,8 @@ const content = {
     },
     products: {
       title: "Ürünlerimiz",
-      subtitle: "Premium Mikroyeşiller",
-      description: "Her biri benzersiz lezzet profilleri ve beslenme faydaları olan premium mikroyeşil çeşitlerimizi keşfedin"
+      subtitle: "Mikroyeşiller",
+      description: "Her biri benzersiz lezzet profilleri ve beslenme faydaları olan mikroyeşil çeşitlerimizi keşfedin"
     },
 
     about: {
@@ -177,15 +181,30 @@ const content = {
 }
 
 export default function HomePage() {
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(() => {
+    // Check if loading screen has been shown in this session
+    if (typeof window !== 'undefined') {
+      return !sessionStorage.getItem('loadingShown')
+    }
+    return true
+  })
   const [language, setLanguage] = useState<'en' | 'tr'>('tr') // Default to Turkish
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const handleLoadingComplete = () => {
     setIsLoading(false)
+    // Mark loading as shown for this session
+    if (typeof window !== 'undefined') {
+      sessionStorage.setItem('loadingShown', 'true')
+    }
   }
 
   const toggleLanguage = () => {
     setLanguage(prev => prev === 'en' ? 'tr' : 'en')
+  }
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(prev => !prev)
   }
 
   const t = content[language]
@@ -246,8 +265,71 @@ export default function HomePage() {
                 {language === 'en' ? 'TR' : 'EN'}
               </button>
             </div>
+
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <button
+                onClick={toggleMobileMenu}
+                className="text-white hover:text-green-400 transition-colors"
+              >
+                {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              </button>
+            </div>
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden bg-black/95 backdrop-blur-sm border-t border-gray-800">
+            <div className="container mx-auto px-4 py-4 space-y-4">
+              <Link
+                href="/"
+                className="block text-green-400 hover:text-green-300 transition-colors font-montserrat font-medium py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t.nav.home}
+              </Link>
+              <Link
+                href="/products"
+                className="block text-white hover:text-green-400 transition-colors font-montserrat font-medium py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t.nav.products}
+              </Link>
+              <Link
+                href="#about"
+                className="block text-white hover:text-green-400 transition-colors font-montserrat font-medium py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t.nav.about}
+              </Link>
+              <Link
+                href="#services"
+                className="block text-white hover:text-green-400 transition-colors font-montserrat font-medium py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t.nav.services}
+              </Link>
+              <Link
+                href="/contact"
+                className="block text-white hover:text-green-400 transition-colors font-montserrat font-medium py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t.nav.contacts}
+              </Link>
+              <button
+                onClick={() => {
+                  toggleLanguage()
+                  setIsMobileMenuOpen(false)
+                }}
+                className="flex items-center text-white hover:text-green-400 transition-colors font-montserrat font-medium py-2"
+              >
+                <Languages className="w-4 h-4 mr-2" />
+                {language === 'en' ? 'TR' : 'EN'}
+              </button>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section */}
@@ -257,12 +339,12 @@ export default function HomePage() {
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           {/* Animated Logo */}
           <div className="mb-8 relative">
-            <div className="w-32 h-32 mx-auto mb-6 animate-[logoEntrance_2s_cubic-bezier(0.68,-0.55,0.265,1.55)]">
+            <div className="w-48 h-48 mx-auto mb-6 animate-[logoEntrance_2s_cubic-bezier(0.68,-0.55,0.265,1.55)]">
               <Image
                 src="/images/pyramid-logo.svg"
                 alt="WHOLEGREEN Logo"
-                width={128}
-                height={128}
+                width={192}
+                height={192}
                 className="w-full h-full drop-shadow-2xl animate-[logoGlow_3s_ease-in-out_infinite_alternate]"
               />
             </div>
@@ -291,13 +373,13 @@ export default function HomePage() {
           </div>
 
           <div className="mb-6 animate-[slideUp_1.5s_ease-out_1s_both]">
-            <Image src="/images/wholegreen-logo.png" alt="WHOLEGREEN" width={400} height={80} className="mx-auto" />
+            <Image src="/images/wholegreen-logo.png" alt="WHOLEGREEN" width={500} height={100} className="mx-auto" />
           </div>
           <p className="montserrat-variable-hero text-black drop-shadow-lg animate-[slideUp_1.5s_ease-out_1.5s_both]">
-            Gelecek Şehirde Filizleniyor
+            {t.hero.mainTitle}
           </p>
           <p className="montserrat-variable-text text-green-300 mt-4 drop-shadow-md animate-[slideUp_1.5s_ease-out_2s_both]">
-            Sürdürülebilir Kentsel Tarım
+            {t.hero.subtitle}
           </p>
         </div>
       </section>
@@ -412,7 +494,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h3 className="text-green-600 font-semibold text-lg mb-2">{t.services.title}</h3>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 font-orbitron">{t.services.subtitle}</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-orbitron">{t.services.subtitle}</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               {t.services.description}
             </p>
@@ -483,29 +565,25 @@ export default function HomePage() {
         </div>
 
         <div className="relative z-10 container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center text-white">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center text-white">
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">150</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-green-400 mb-2">150</div>
               <div className="text-gray-300">{t.stats.clients}</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">2.5K</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-green-400 mb-2">2.5K</div>
               <div className="text-gray-300">{t.stats.systems}</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">50M</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-green-400 mb-2">50M</div>
               <div className="text-gray-300">{t.stats.plants}</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">12</div>
-              <div className="text-gray-300">{t.stats.experience}</div>
-            </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">25</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-green-400 mb-2">25</div>
               <div className="text-gray-300">{t.stats.specialists}</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">18</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-green-400 mb-2">18</div>
               <div className="text-gray-300">{t.stats.awards}</div>
             </div>
           </div>
@@ -517,7 +595,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h3 className="text-green-600 font-semibold text-lg mb-2">{t.products.title}</h3>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 font-orbitron">{t.products.subtitle}</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-orbitron">{t.products.subtitle}</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               {t.products.description}
             </p>
@@ -587,8 +665,8 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-green-600 to-emerald-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-4 font-orbitron">{t.cta.title}</h2>
-          <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 font-orbitron">{t.cta.title}</h2>
+          <p className="text-lg sm:text-xl text-green-100 mb-8 max-w-2xl mx-auto">
             {t.cta.description}
           </p>
           <Link href="/contact">
@@ -614,36 +692,36 @@ export default function HomePage() {
                   className="h-6 w-auto"
                 />
               </div>
-              <p className="text-gray-400">Premium microgreen technologies for a sustainable future</p>
+              <p className="text-gray-400">Modern kentsel tarım ile sürdürülebilir geleceğe</p>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">Services</h4>
+              <h4 className="font-semibold mb-4">Hızlı Linkler</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>Microgreen Production</li>
-                <li>Indoor Agriculture</li>
-                <li>Space Agriculture</li>
-                <li>Precision Farming</li>
+                <li><Link href="/" className="hover:text-green-400 transition-colors">Ana Sayfa</Link></li>
+                <li><Link href="/products" className="hover:text-green-400 transition-colors">Ürünler</Link></li>
+                <li><Link href="#about" className="hover:text-green-400 transition-colors">Hakkımızda</Link></li>
+                <li><Link href="/contact" className="hover:text-green-400 transition-colors">İletişim</Link></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">Products</h4>
+              <h4 className="font-semibold mb-4">Ürünlerimiz</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>Perilla</li>
-                <li>Daikon Radish</li>
-                <li>Amaranth</li>
-                <li>Red Radish</li>
+                <li><Link href="/products/perilla" className="hover:text-green-400 transition-colors">Perilla</Link></li>
+                <li><Link href="/products/daikon-radish" className="hover:text-green-400 transition-colors">Daikon Radish</Link></li>
+                <li><Link href="/products/amaranth" className="hover:text-green-400 transition-colors">Amaranth</Link></li>
+                <li><Link href="/products/red-radish" className="hover:text-green-400 transition-colors">Red Radish</Link></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
+              <h4 className="font-semibold mb-4">İletişim</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>info@wholegreen.com</li>
-                <li>+1 (555) 123-4567</li>
-                <li>123 Innovation Drive</li>
-                <li>Tech Valley, CA 94000</li>
+                <li><a href="mailto:emir@wholegreen.co" className="hover:text-green-400 transition-colors">emir@wholegreen.co</a></li>
+                <li><a href="tel:+905324762628" className="hover:text-green-400 transition-colors">+90 532 476 2628</a></li>
+                <li>AYAZAĞA MAH. ŞEHİT NACİ CANAN TUNCER SK.</li>
+                <li>NO: 35 /1A SARIYER/ İSTANBUL</li>
               </ul>
             </div>
           </div>
@@ -651,7 +729,7 @@ export default function HomePage() {
           <Separator className="my-8 bg-gray-800" />
 
           <div className="text-center text-gray-400">
-            <p>&copy; 2024 WHOLEGREEN. All rights reserved.</p>
+            <p>&copy; 2024 Whole Green Tarım A.Ş. Tüm hakları saklıdır.</p>
           </div>
         </div>
       </footer>

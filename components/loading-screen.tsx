@@ -192,9 +192,12 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
       {/* Loading Content */}
       <div className="text-center z-10">
         <div className="mb-8">
-          <img src="/images/wholegreen-logo.png" alt="WholeGreen" className="h-16 w-auto mx-auto mb-4" />
-          <h1 className="text-2xl font-bold text-gray-900 mb-2">WholeGreen</h1>
-          <p className="text-gray-600">Premium Microgreens</p>
+          <div className="w-24 h-24 mx-auto mb-6">
+            <img src="/images/pyramid-logo.svg" alt="WHOLEGREEN" className="w-full h-full" />
+          </div>
+          <img src="/images/wholegreen-logo.png" alt="WholeGreen" className="h-20 w-auto mx-auto mb-4" />
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">WHOLEGREEN</h1>
+          <p className="text-gray-600">Gelecek Şehirde Filizleniyor</p>
         </div>
 
         <div className="w-64 mx-auto">
