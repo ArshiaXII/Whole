@@ -196,7 +196,6 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
             <img src="/images/pyramid-logo.svg" alt="WHOLEGREEN" className="w-full h-full" />
           </div>
           <img src="/images/wholegreen-logo.png" alt="WholeGreen" className="h-20 w-auto mx-auto mb-4" />
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">WHOLEGREEN</h1>
           <p className="text-gray-600">Gelecek Şehirde Filizleniyor</p>
         </div>
 
