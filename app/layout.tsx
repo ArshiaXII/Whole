@@ -5,6 +5,7 @@ import ParticleBackground from "@/components/ParticleBackground"
 import PlexusBackground from "@/components/PlexusBackground"
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://wholegreen.com'),
   title: "WHOLEGREEN - Premium Mikroyeşiller",
   description: "Modern kentsel tarım ile premium mikroyeşil üretimi. Sürdürülebilir, hijyenik ve kaliteli gıda çözümleri.",
   generator: "WHOLEGREEN",

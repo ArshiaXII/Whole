@@ -4,6 +4,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Brand Font - Montserrat Primary with Orbitron Accents */
 
 /* Apply Montserrat to all headings for modern, clean hierarchy */

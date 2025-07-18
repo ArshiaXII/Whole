@@ -1,0 +1,71 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0fdf4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#dcfce7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bbf7d0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#16a34a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#15803d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bgGradient)"/>
+  
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#16a34a" stroke-width="0.5" opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#grid)"/>
+  
+  <!-- Central icon circle -->
+  <circle cx="600" cy="400" r="120" fill="white" stroke="#16a34a" stroke-width="3" opacity="0.9"/>
+  
+  <!-- Agriculture/Plant icon -->
+  <g transform="translate(600, 400)">
+    <!-- Leaf 1 -->
+    <path d="M-30 -20 Q-50 -40 -30 -60 Q-10 -40 -30 -20" fill="url(#iconGradient)"/>
+    <!-- Leaf 2 -->
+    <path d="M30 -20 Q50 -40 30 -60 Q10 -40 30 -20" fill="url(#iconGradient)"/>
+    <!-- Stem -->
+    <rect x="-3" y="-20" width="6" height="40" fill="url(#iconGradient)"/>
+    <!-- Roots -->
+    <path d="M-3 20 Q-20 35 -15 45 M3 20 Q20 35 15 45 M0 20 L0 50" stroke="url(#iconGradient)" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- Floating elements -->
+  <!-- Top left -->
+  <circle cx="150" cy="150" r="8" fill="#16a34a" opacity="0.3"/>
+  <circle cx="180" cy="120" r="6" fill="#22c55e" opacity="0.4"/>
+  
+  <!-- Top right -->
+  <circle cx="1050" cy="150" r="10" fill="#15803d" opacity="0.3"/>
+  <circle cx="1020" cy="120" r="7" fill="#16a34a" opacity="0.4"/>
+  
+  <!-- Bottom left -->
+  <circle cx="150" cy="650" r="9" fill="#22c55e" opacity="0.3"/>
+  <circle cx="120" cy="680" r="6" fill="#16a34a" opacity="0.4"/>
+  
+  <!-- Bottom right -->
+  <circle cx="1050" cy="650" r="8" fill="#15803d" opacity="0.3"/>
+  <circle cx="1080" cy="620" r="7" fill="#22c55e" opacity="0.4"/>
+  
+  <!-- Text overlay -->
+  <text x="600" y="580" text-anchor="middle" fill="#16a34a" font-family="Arial, sans-serif" font-size="24" font-weight="bold" opacity="0.7">
+    Vision Image Placeholder
+  </text>
+  <text x="600" y="610" text-anchor="middle" fill="#15803d" font-family="Arial, sans-serif" font-size="16" opacity="0.6">
+    Showcase your agricultural technology (1200x800px)
+  </text>
+  
+  <!-- Corner decorations -->
+  <path d="M0 0 L40 0 L40 40 L0 40 Z" fill="none" stroke="#16a34a" stroke-width="2" opacity="0.2"/>
+  <path d="M1160 0 L1200 0 L1200 40 L1160 40 Z" fill="none" stroke="#16a34a" stroke-width="2" opacity="0.2"/>
+  <path d="M0 760 L40 760 L40 800 L0 800 Z" fill="none" stroke="#16a34a" stroke-width="2" opacity="0.2"/>
+  <path d="M1160 760 L1200 760 L1200 800 L1160 800 Z" fill="none" stroke="#16a34a" stroke-width="2" opacity="0.2"/>
+</svg>

@@ -1,0 +1,23 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background pattern for microgreens -->
+  <defs>
+    <pattern id="microgreensPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <!-- Small leaf shapes -->
+      <path d="M5 10 Q2 7 5 4 Q8 7 5 10" fill="#16a34a" opacity="0.1"/>
+      <path d="M15 15 Q12 12 15 9 Q18 12 15 15" fill="#22c55e" opacity="0.1"/>
+      <circle cx="10" cy="5" r="1" fill="#15803d" opacity="0.1"/>
+      <circle cx="3" cy="18" r="0.5" fill="#16a34a" opacity="0.1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Apply pattern -->
+  <rect width="100" height="100" fill="url(#microgreensPattern)"/>
+  
+  <!-- Additional decorative elements -->
+  <g opacity="0.05">
+    <path d="M20 20 Q15 15 20 10 Q25 15 20 20" fill="#16a34a"/>
+    <path d="M80 30 Q75 25 80 20 Q85 25 80 30" fill="#22c55e"/>
+    <path d="M50 70 Q45 65 50 60 Q55 65 50 70" fill="#15803d"/>
+    <path d="M30 80 Q25 75 30 70 Q35 75 30 80" fill="#16a34a"/>
+  </g>
+</svg>

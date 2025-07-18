@@ -15,10 +15,10 @@ const productData = {
   turkishName: "Kırmızı Turp",
   tagline: "Bold & Peppery",
   scientificName: "Raphanus sativus",
-  heroImage: "/images/products/red-radish-hero.jpg",
-  packagingImage: "/images/products/red-radish-packaging.jpg",
-  lifestyleImage: "/images/products/red-radish-lifestyle.jpg",
-  rawIngredientImage: "/images/products/whole-radishes.jpg",
+  heroImage: "/images/hero-microgreens.jpg",
+  packagingImage: "/images/hero-microgreens.jpg",
+  lifestyleImage: "/images/hero-microgreens.jpg",
+  rawIngredientImage: "/images/hero-microgreens.jpg",
 
   // Key Product Specs
   specs: {
@@ -48,11 +48,11 @@ const productData = {
     citrus: ["Grapefruit", "Yuzu", "Lime", "Blood Orange"]
   },
 
-  // Taste Profile Journey
+  // Taste Profile
   tasteProfile: {
-    start: "Sharp peppery start",
-    middle: "Hint of tomato in the middle",
-    finish: "Earthy, sweet finish"
+    start: "Sharp, peppery heat",
+    middle: "Intense spicy warmth",
+    finish: "Clean, crisp aftertaste"
   }
 }
 

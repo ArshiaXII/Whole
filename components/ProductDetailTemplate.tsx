@@ -3,6 +3,8 @@
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
 import Link from "next/link"
+import { useState } from "react"
+import { Menu, X, Languages } from "lucide-react"
 
 interface ProductData {
   id: string
@@ -34,12 +36,24 @@ interface ProductDetailTemplateProps {
 }
 
 const ProductDetailTemplate: React.FC<ProductDetailTemplateProps> = ({ productData }) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [language, setLanguage] = useState('tr')
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen)
+  }
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'en' ? 'tr' : 'en')
+  }
+
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
-      <nav className="bg-white shadow-sm border-b sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+      {/* Navigation - Matching Main Page Header */}
+      <nav className="fixed top-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-16">
+            {/* Left Side - Logo */}
             <div className="flex items-center gap-3">
               <div className="w-10 h-10">
                 <Image
@@ -58,31 +72,102 @@ const ProductDetailTemplate: React.FC<ProductDetailTemplateProps> = ({ productDa
                 className="h-6 w-auto"
               />
             </div>
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4">
-                <Link href="/" className="text-gray-500 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors font-orbitron">
-                  Ana Sayfa
-                </Link>
-                <Link
-                  href="/products"
-                  className="text-green-600 bg-green-50 px-3 py-2 rounded-md text-sm font-medium font-orbitron"
-                >
-                  Ürünler
-                </Link>
-                <Link
-                  href="/contact"
-                  className="text-gray-500 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors font-orbitron"
-                >
-                  İletişim
-                </Link>
-              </div>
+
+            {/* Right Side - Full Navigation Menu */}
+            <div className="hidden md:flex items-center space-x-8">
+              <Link href="/" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
+                ANA SAYFA
+              </Link>
+              <Link href="/products" className="text-green-400 hover:text-green-300 transition-colors font-montserrat font-medium">
+                ÜRÜNLER
+              </Link>
+              <Link href="/#about" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
+                HAKKIMIZDA
+              </Link>
+              <Link href="/#services" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
+                HİZMETLER
+              </Link>
+              <Link href="/contact" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
+                İLETİŞİM
+              </Link>
+
+              {/* Language Toggle */}
+              <button
+                onClick={toggleLanguage}
+                className="flex items-center text-white hover:text-green-400 transition-colors font-montserrat font-medium"
+              >
+                <Languages className="w-4 h-4 mr-1" />
+                {language === 'en' ? 'TR' : 'EN'}
+              </button>
+            </div>
+
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <button
+                onClick={toggleMobileMenu}
+                className="text-white hover:text-green-400 transition-colors"
+              >
+                {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              </button>
             </div>
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden bg-black/95 backdrop-blur-sm border-t border-gray-800">
+            <div className="container mx-auto px-4 py-4 space-y-4">
+              <Link
+                href="/"
+                className="block text-white hover:text-green-400 transition-colors font-montserrat font-medium py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                ANA SAYFA
+              </Link>
+              <Link
+                href="/products"
+                className="block text-green-400 hover:text-green-300 transition-colors font-montserrat font-medium py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                ÜRÜNLER
+              </Link>
+              <Link
+                href="/#about"
+                className="block text-white hover:text-green-400 transition-colors font-montserrat font-medium py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                HAKKIMIZDA
+              </Link>
+              <Link
+                href="/#services"
+                className="block text-white hover:text-green-400 transition-colors font-montserrat font-medium py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                HİZMETLER
+              </Link>
+              <Link
+                href="/contact"
+                className="block text-white hover:text-green-400 transition-colors font-montserrat font-medium py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                İLETİŞİM
+              </Link>
+
+              {/* Mobile Language Toggle */}
+              <button
+                onClick={toggleLanguage}
+                className="flex items-center text-white hover:text-green-400 transition-colors font-montserrat font-medium py-2"
+              >
+                <Languages className="w-4 h-4 mr-2" />
+                {language === 'en' ? 'TR' : 'EN'}
+              </button>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Breadcrumb */}
-      <div className="bg-gray-50 py-4">
+      <div className="bg-gray-50 py-4 pt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center space-x-2 text-sm text-gray-600">
             <Link href="/" className="hover:text-green-600">WHOLEGREEN</Link>
