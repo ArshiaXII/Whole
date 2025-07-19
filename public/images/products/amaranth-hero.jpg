@@ -1,0 +1,99 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="amaranthBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdf2f8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fce7f3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbcfe8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="amaranthRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#991b1b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="amaranthPink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#be185d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#amaranthBg)"/>
+  
+  <!-- Subtle pattern -->
+  <pattern id="amaranthPattern" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+    <circle cx="25" cy="25" r="1.5" fill="#ec4899" opacity="0.1"/>
+  </pattern>
+  <rect width="1200" height="800" fill="url(#amaranthPattern)"/>
+  
+  <!-- Main amaranth microgreens illustration -->
+  <g transform="translate(600, 400)">
+    <!-- Multiple amaranth stems with vibrant magenta color -->
+    <g transform="translate(-250, 0)">
+      <!-- Stem 1 -->
+      <rect x="-2" y="-90" width="4" height="180" fill="url(#amaranthPink)" rx="2"/>
+      <!-- Leaves -->
+      <ellipse cx="-18" cy="-80" rx="15" ry="10" fill="url(#amaranthRed)" transform="rotate(-25)"/>
+      <ellipse cx="18" cy="-75" rx="13" ry="8" fill="url(#amaranthPink)" transform="rotate(30)"/>
+      <ellipse cx="-12" cy="-55" rx="11" ry="7" fill="url(#amaranthRed)" transform="rotate(-15)"/>
+    </g>
+    
+    <g transform="translate(-125, 0)">
+      <!-- Stem 2 -->
+      <rect x="-3" y="-100" width="6" height="200" fill="url(#amaranthRed)" rx="3"/>
+      <!-- Leaves -->
+      <ellipse cx="-20" cy="-90" rx="17" ry="11" fill="url(#amaranthPink)" transform="rotate(-30)"/>
+      <ellipse cx="20" cy="-85" rx="15" ry="9" fill="url(#amaranthRed)" transform="rotate(35)"/>
+      <ellipse cx="-15" cy="-65" rx="13" ry="8" fill="url(#amaranthPink)" transform="rotate(-20)"/>
+      <ellipse cx="12" cy="-55" rx="11" ry="7" fill="url(#amaranthRed)" transform="rotate(25)"/>
+    </g>
+    
+    <g transform="translate(0, 0)">
+      <!-- Stem 3 (center, tallest) -->
+      <rect x="-3" y="-110" width="6" height="220" fill="url(#amaranthPink)" rx="3"/>
+      <!-- Leaves -->
+      <ellipse cx="-22" cy="-100" rx="18" ry="12" fill="url(#amaranthRed)" transform="rotate(-35)"/>
+      <ellipse cx="22" cy="-95" rx="16" ry="10" fill="url(#amaranthPink)" transform="rotate(40)"/>
+      <ellipse cx="-18" cy="-75" rx="14" ry="9" fill="url(#amaranthRed)" transform="rotate(-25)"/>
+      <ellipse cx="15" cy="-65" rx="12" ry="8" fill="url(#amaranthPink)" transform="rotate(30)"/>
+      <ellipse cx="-10" cy="-45" rx="10" ry="6" fill="url(#amaranthRed)" transform="rotate(-18)"/>
+    </g>
+    
+    <g transform="translate(125, 0)">
+      <!-- Stem 4 -->
+      <rect x="-3" y="-95" width="6" height="190" fill="url(#amaranthRed)" rx="3"/>
+      <!-- Leaves -->
+      <ellipse cx="-19" cy="-85" rx="16" ry="10" fill="url(#amaranthPink)" transform="rotate(-28)"/>
+      <ellipse cx="19" cy="-80" rx="14" ry="8" fill="url(#amaranthRed)" transform="rotate(32)"/>
+      <ellipse cx="-13" cy="-60" rx="12" ry="7" fill="url(#amaranthPink)" transform="rotate(-22)"/>
+    </g>
+    
+    <g transform="translate(250, 0)">
+      <!-- Stem 5 -->
+      <rect x="-2" y="-85" width="4" height="170" fill="url(#amaranthPink)" rx="2"/>
+      <!-- Leaves -->
+      <ellipse cx="-16" cy="-75" rx="14" ry="9" fill="url(#amaranthRed)" transform="rotate(-20)"/>
+      <ellipse cx="16" cy="-70" rx="12" ry="7" fill="url(#amaranthPink)" transform="rotate(25)"/>
+    </g>
+  </g>
+  
+  <!-- Soil/growing medium base -->
+  <rect x="0" y="650" width="1200" height="150" fill="#8b5cf6" opacity="0.1"/>
+  
+  <!-- Product label -->
+  <rect x="50" y="50" width="280" height="120" fill="white" rx="15" opacity="0.95"/>
+  <text x="190" y="85" text-anchor="middle" fill="#dc2626" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+    Amaranth
+  </text>
+  <text x="190" y="110" text-anchor="middle" fill="#be185d" font-family="Arial, sans-serif" font-size="16">
+    Vibrant &amp; Earthy
+  </text>
+  <text x="190" y="135" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="12" style="font-style: italic;">
+    Amaranthus spp.
+  </text>
+  
+  <!-- Decorative elements -->
+  <circle cx="1050" cy="150" r="8" fill="#dc2626" opacity="0.3"/>
+  <circle cx="1100" cy="200" r="6" fill="#ec4899" opacity="0.4"/>
+  <circle cx="150" cy="650" r="10" fill="#be185d" opacity="0.3"/>
+  <circle cx="100" cy="700" r="7" fill="#dc2626" opacity="0.4"/>
+</svg>

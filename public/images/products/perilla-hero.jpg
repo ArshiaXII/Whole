@@ -1,0 +1,97 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="perillaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#faf5ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f3e8ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9d5ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="perillaPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5b21b6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="perillaIndigo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3730a3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="perillaGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#16a34a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#15803d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#perillaBg)"/>
+  
+  <!-- Subtle pattern -->
+  <pattern id="perillaPattern" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+    <circle cx="30" cy="30" r="2" fill="#7c3aed" opacity="0.08"/>
+  </pattern>
+  <rect width="1200" height="800" fill="url(#perillaPattern)"/>
+  
+  <!-- Main perilla microgreens illustration -->
+  <g transform="translate(600, 400)">
+    <!-- Multiple perilla stems with broad, serrated leaves -->
+    <g transform="translate(-280, 0)">
+      <!-- Stem 1 -->
+      <rect x="-3" y="-90" width="6" height="180" fill="url(#perillaPurple)" rx="3"/>
+      <!-- Broad serrated leaves -->
+      <path d="M-25,-80 Q-35,-85 -30,-95 Q-20,-90 -15,-85 Q-10,-80 -5,-85 Q0,-90 5,-85 Q10,-80 15,-85 Q20,-90 25,-85 Q30,-80 25,-70 Q20,-75 15,-70 Q10,-75 5,-70 Q0,-75 -5,-70 Q-10,-75 -15,-70 Q-20,-75 -25,-80 Z" fill="url(#perillaIndigo)"/>
+      <path d="M-20,-55 Q-28,-60 -25,-68 Q-18,-63 -12,-60 Q-6,-55 0,-60 Q6,-63 12,-60 Q18,-55 20,-50 Q15,-52 10,-50 Q5,-52 0,-50 Q-5,-52 -10,-50 Q-15,-52 -20,-55 Z" fill="url(#perillaGreen)"/>
+    </g>
+    
+    <g transform="translate(-140, 0)">
+      <!-- Stem 2 -->
+      <rect x="-3" y="-100" width="6" height="200" fill="url(#perillaGreen)" rx="3"/>
+      <!-- Broad serrated leaves -->
+      <path d="M-28,-90 Q-38,-95 -33,-105 Q-23,-100 -18,-95 Q-13,-90 -8,-95 Q-3,-100 2,-95 Q7,-90 12,-95 Q17,-100 22,-95 Q27,-90 28,-80 Q23,-85 18,-80 Q13,-85 8,-80 Q3,-85 -2,-80 Q-7,-85 -12,-80 Q-17,-85 -22,-80 Q-27,-85 -28,-90 Z" fill="url(#perillaPurple)"/>
+      <path d="M-22,-65 Q-30,-70 -27,-78 Q-20,-73 -14,-70 Q-8,-65 -2,-70 Q4,-73 10,-70 Q16,-65 18,-60 Q13,-62 8,-60 Q3,-62 -2,-60 Q-7,-62 -12,-60 Q-17,-62 -22,-65 Z" fill="url(#perillaIndigo)"/>
+      <path d="M-15,-40 Q-20,-43 -18,-48 Q-13,-45 -8,-43 Q-3,-40 2,-43 Q7,-45 12,-43 Q15,-40 13,-35 Q8,-37 3,-35 Q-2,-37 -7,-35 Q-12,-37 -15,-40 Z" fill="url(#perillaGreen)"/>
+    </g>
+    
+    <g transform="translate(0, 0)">
+      <!-- Stem 3 (center, tallest) -->
+      <rect x="-4" y="-110" width="8" height="220" fill="url(#perillaPurple)" rx="4"/>
+      <!-- Broad serrated leaves -->
+      <path d="M-30,-100 Q-42,-105 -37,-118 Q-25,-110 -18,-105 Q-11,-100 -4,-105 Q3,-110 10,-105 Q17,-100 24,-105 Q31,-110 35,-105 Q40,-100 35,-85 Q30,-90 25,-85 Q20,-90 15,-85 Q10,-90 5,-85 Q0,-90 -5,-85 Q-10,-90 -15,-85 Q-20,-90 -25,-85 Q-30,-90 -30,-100 Z" fill="url(#perillaIndigo)"/>
+      <path d="M-25,-75 Q-35,-80 -32,-90 Q-22,-85 -15,-80 Q-8,-75 0,-80 Q8,-85 15,-80 Q22,-75 25,-70 Q20,-72 15,-70 Q10,-72 5,-70 Q0,-72 -5,-70 Q-10,-72 -15,-70 Q-20,-72 -25,-75 Z" fill="url(#perillaGreen)"/>
+      <path d="M-20,-50 Q-28,-55 -25,-63 Q-18,-58 -12,-55 Q-6,-50 0,-55 Q6,-58 12,-55 Q18,-50 20,-45 Q15,-47 10,-45 Q5,-47 0,-45 Q-5,-47 -10,-45 Q-15,-47 -20,-50 Z" fill="url(#perillaPurple)"/>
+    </g>
+    
+    <g transform="translate(140, 0)">
+      <!-- Stem 4 -->
+      <rect x="-3" y="-95" width="6" height="190" fill="url(#perillaIndigo)" rx="3"/>
+      <!-- Broad serrated leaves -->
+      <path d="M-26,-85 Q-36,-90 -31,-100 Q-21,-95 -16,-90 Q-11,-85 -6,-90 Q-1,-95 4,-90 Q9,-85 14,-90 Q19,-95 24,-90 Q29,-85 26,-75 Q21,-80 16,-75 Q11,-80 6,-75 Q1,-80 -4,-75 Q-9,-80 -14,-75 Q-19,-80 -24,-75 Q-26,-80 -26,-85 Z" fill="url(#perillaGreen)"/>
+      <path d="M-20,-60 Q-28,-65 -25,-73 Q-18,-68 -12,-65 Q-6,-60 0,-65 Q6,-68 12,-65 Q18,-60 20,-55 Q15,-57 10,-55 Q5,-57 0,-55 Q-5,-57 -10,-55 Q-15,-57 -20,-60 Z" fill="url(#perillaPurple)"/>
+    </g>
+    
+    <g transform="translate(280, 0)">
+      <!-- Stem 5 -->
+      <rect x="-3" y="-85" width="6" height="170" fill="url(#perillaGreen)" rx="3"/>
+      <!-- Broad serrated leaves -->
+      <path d="M-24,-75 Q-32,-80 -29,-88 Q-21,-83 -16,-80 Q-11,-75 -6,-80 Q-1,-83 4,-80 Q9,-75 14,-80 Q19,-83 22,-80 Q25,-75 22,-68 Q17,-70 12,-68 Q7,-70 2,-68 Q-3,-70 -8,-68 Q-13,-70 -18,-68 Q-23,-70 -24,-75 Z" fill="url(#perillaIndigo)"/>
+    </g>
+  </g>
+  
+  <!-- Soil/growing medium base -->
+  <rect x="0" y="650" width="1200" height="150" fill="#8b5cf6" opacity="0.1"/>
+  
+  <!-- Product label -->
+  <rect x="50" y="50" width="280" height="120" fill="white" rx="15" opacity="0.95"/>
+  <text x="190" y="85" text-anchor="middle" fill="#7c3aed" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+    Perilla
+  </text>
+  <text x="190" y="110" text-anchor="middle" fill="#4f46e5" font-family="Arial, sans-serif" font-size="16">
+    Aromatic &amp; Unique
+  </text>
+  <text x="190" y="135" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="12" style="font-style: italic;">
+    Perilla frutescens
+  </text>
+  
+  <!-- Decorative elements -->
+  <circle cx="1050" cy="150" r="8" fill="#7c3aed" opacity="0.3"/>
+  <circle cx="1100" cy="200" r="6" fill="#4f46e5" opacity="0.4"/>
+  <circle cx="150" cy="650" r="10" fill="#5b21b6" opacity="0.3"/>
+  <circle cx="100" cy="700" r="7" fill="#3730a3" opacity="0.4"/>
+</svg>

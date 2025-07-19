@@ -1,0 +1,169 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="lionBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fafaf9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f5f5f4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e7e5e4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lionWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lionGray" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#78716c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#57534e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lionCream" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef7cd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fde68a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#lionBg)"/>
+  
+  <!-- Subtle pattern -->
+  <pattern id="lionPattern" x="0" y="0" width="150" height="150" patternUnits="userSpaceOnUse">
+    <circle cx="75" cy="75" r="2" fill="#78716c" opacity="0.06"/>
+    <circle cx="40" cy="110" r="1.5" fill="#57534e" opacity="0.04"/>
+  </pattern>
+  <rect width="1200" height="800" fill="url(#lionPattern)"/>
+  
+  <!-- Main Lion's Mane mushroom illustration -->
+  <g transform="translate(600, 400)">
+    <!-- Lion's Mane mushroom with cascading spines -->
+    
+    <!-- Substrate/growing medium -->
+    <ellipse cx="0" cy="120" rx="180" ry="30" fill="url(#lionGray)" opacity="0.3"/>
+    
+    <!-- Main Lion's Mane body (large) -->
+    <g transform="translate(0, 0)">
+      <!-- Central mass -->
+      <ellipse cx="0" cy="20" rx="80" ry="60" fill="url(#lionWhite)"/>
+      
+      <!-- Cascading spines (icicle-like projections) -->
+      <!-- Top layer of spines -->
+      <g>
+        <ellipse cx="-60" cy="-10" rx="3" ry="25" fill="url(#lionWhite)" transform="rotate(-15)"/>
+        <ellipse cx="-45" cy="-15" rx="3" ry="30" fill="url(#lionCream)" transform="rotate(-10)"/>
+        <ellipse cx="-30" cy="-20" rx="4" ry="35" fill="url(#lionWhite)" transform="rotate(-5)"/>
+        <ellipse cx="-15" cy="-25" rx="4" ry="40" fill="url(#lionCream)" transform="rotate(0)"/>
+        <ellipse cx="0" cy="-25" rx="5" ry="42" fill="url(#lionWhite)" transform="rotate(0)"/>
+        <ellipse cx="15" cy="-25" rx="4" ry="40" fill="url(#lionCream)" transform="rotate(0)"/>
+        <ellipse cx="30" cy="-20" rx="4" ry="35" fill="url(#lionWhite)" transform="rotate(5)"/>
+        <ellipse cx="45" cy="-15" rx="3" ry="30" fill="url(#lionCream)" transform="rotate(10)"/>
+        <ellipse cx="60" cy="-10" rx="3" ry="25" fill="url(#lionWhite)" transform="rotate(15)"/>
+      </g>
+      
+      <!-- Middle layer of spines -->
+      <g>
+        <ellipse cx="-70" cy="10" rx="3" ry="35" fill="url(#lionCream)" transform="rotate(-20)"/>
+        <ellipse cx="-55" cy="5" rx="4" ry="40" fill="url(#lionWhite)" transform="rotate(-15)"/>
+        <ellipse cx="-40" cy="0" rx="4" ry="45" fill="url(#lionCream)" transform="rotate(-8)"/>
+        <ellipse cx="-25" cy="-5" rx="5" ry="50" fill="url(#lionWhite)" transform="rotate(-3)"/>
+        <ellipse cx="-10" cy="-5" rx="5" ry="52" fill="url(#lionCream)" transform="rotate(0)"/>
+        <ellipse cx="10" cy="-5" rx="5" ry="52" fill="url(#lionWhite)" transform="rotate(0)"/>
+        <ellipse cx="25" cy="-5" rx="5" ry="50" fill="url(#lionCream)" transform="rotate(3)"/>
+        <ellipse cx="40" cy="0" rx="4" ry="45" fill="url(#lionWhite)" transform="rotate(8)"/>
+        <ellipse cx="55" cy="5" rx="4" ry="40" fill="url(#lionCream)" transform="rotate(15)"/>
+        <ellipse cx="70" cy="10" rx="3" ry="35" fill="url(#lionWhite)" transform="rotate(20)"/>
+      </g>
+      
+      <!-- Bottom layer of spines (longest) -->
+      <g>
+        <ellipse cx="-75" cy="30" rx="4" ry="45" fill="url(#lionWhite)" transform="rotate(-25)"/>
+        <ellipse cx="-60" cy="25" rx="5" ry="50" fill="url(#lionCream)" transform="rotate(-18)"/>
+        <ellipse cx="-45" cy="20" rx="5" ry="55" fill="url(#lionWhite)" transform="rotate(-12)"/>
+        <ellipse cx="-30" cy="15" rx="6" ry="60" fill="url(#lionCream)" transform="rotate(-6)"/>
+        <ellipse cx="-15" cy="15" rx="6" ry="62" fill="url(#lionWhite)" transform="rotate(-2)"/>
+        <ellipse cx="0" cy="15" rx="7" ry="65" fill="url(#lionCream)" transform="rotate(0)"/>
+        <ellipse cx="15" cy="15" rx="6" ry="62" fill="url(#lionWhite)" transform="rotate(2)"/>
+        <ellipse cx="30" cy="15" rx="6" ry="60" fill="url(#lionCream)" transform="rotate(6)"/>
+        <ellipse cx="45" cy="20" rx="5" ry="55" fill="url(#lionWhite)" transform="rotate(12)"/>
+        <ellipse cx="60" cy="25" rx="5" ry="50" fill="url(#lionCream)" transform="rotate(18)"/>
+        <ellipse cx="75" cy="30" rx="4" ry="45" fill="url(#lionWhite)" transform="rotate(25)"/>
+      </g>
+      
+      <!-- Additional shorter spines for texture -->
+      <g opacity="0.8">
+        <ellipse cx="-35" cy="35" rx="3" ry="25" fill="url(#lionWhite)" transform="rotate(-10)"/>
+        <ellipse cx="-20" cy="40" rx="3" ry="30" fill="url(#lionCream)" transform="rotate(-5)"/>
+        <ellipse cx="-5" cy="42" rx="4" ry="35" fill="url(#lionWhite)" transform="rotate(0)"/>
+        <ellipse cx="5" cy="42" rx="4" ry="35" fill="url(#lionCream)" transform="rotate(0)"/>
+        <ellipse cx="20" cy="40" rx="3" ry="30" fill="url(#lionWhite)" transform="rotate(5)"/>
+        <ellipse cx="35" cy="35" rx="3" ry="25" fill="url(#lionCream)" transform="rotate(10)"/>
+      </g>
+    </g>
+    
+    <!-- Smaller Lion's Mane (left) -->
+    <g transform="translate(-150, 40)">
+      <!-- Central mass -->
+      <ellipse cx="0" cy="15" rx="50" ry="40" fill="url(#lionWhite)"/>
+      
+      <!-- Spines -->
+      <g>
+        <ellipse cx="-35" cy="-5" rx="2.5" ry="20" fill="url(#lionCream)" transform="rotate(-12)"/>
+        <ellipse cx="-20" cy="-10" rx="3" ry="25" fill="url(#lionWhite)" transform="rotate(-6)"/>
+        <ellipse cx="-5" cy="-12" rx="3.5" ry="30" fill="url(#lionCream)" transform="rotate(0)"/>
+        <ellipse cx="5" cy="-12" rx="3.5" ry="30" fill="url(#lionWhite)" transform="rotate(0)"/>
+        <ellipse cx="20" cy="-10" rx="3" ry="25" fill="url(#lionCream)" transform="rotate(6)"/>
+        <ellipse cx="35" cy="-5" rx="2.5" ry="20" fill="url(#lionWhite)" transform="rotate(12)"/>
+      </g>
+      
+      <g>
+        <ellipse cx="-40" cy="15" rx="3" ry="30" fill="url(#lionWhite)" transform="rotate(-15)"/>
+        <ellipse cx="-25" cy="10" rx="4" ry="35" fill="url(#lionCream)" transform="rotate(-8)"/>
+        <ellipse cx="-10" cy="8" rx="4" ry="40" fill="url(#lionWhite)" transform="rotate(-2)"/>
+        <ellipse cx="10" cy="8" rx="4" ry="40" fill="url(#lionCream)" transform="rotate(2)"/>
+        <ellipse cx="25" cy="10" rx="4" ry="35" fill="url(#lionWhite)" transform="rotate(8)"/>
+        <ellipse cx="40" cy="15" rx="3" ry="30" fill="url(#lionCream)" transform="rotate(15)"/>
+      </g>
+    </g>
+    
+    <!-- Smaller Lion's Mane (right) -->
+    <g transform="translate(160, 50)">
+      <!-- Central mass -->
+      <ellipse cx="0" cy="12" rx="45" ry="35" fill="url(#lionWhite)"/>
+      
+      <!-- Spines -->
+      <g>
+        <ellipse cx="-30" cy="-3" rx="2.5" ry="18" fill="url(#lionCream)" transform="rotate(-10)"/>
+        <ellipse cx="-15" cy="-8" rx="3" ry="22" fill="url(#lionWhite)" transform="rotate(-5)"/>
+        <ellipse cx="0" cy="-10" rx="3.5" ry="28" fill="url(#lionCream)" transform="rotate(0)"/>
+        <ellipse cx="15" cy="-8" rx="3" ry="22" fill="url(#lionWhite)" transform="rotate(5)"/>
+        <ellipse cx="30" cy="-3" rx="2.5" ry="18" fill="url(#lionCream)" transform="rotate(10)"/>
+      </g>
+      
+      <g>
+        <ellipse cx="-35" cy="12" rx="3" ry="28" fill="url(#lionWhite)" transform="rotate(-12)"/>
+        <ellipse cx="-20" cy="8" rx="3.5" ry="32" fill="url(#lionCream)" transform="rotate(-6)"/>
+        <ellipse cx="-5" cy="6" rx="4" ry="38" fill="url(#lionWhite)" transform="rotate(-1)"/>
+        <ellipse cx="5" cy="6" rx="4" ry="38" fill="url(#lionCream)" transform="rotate(1)"/>
+        <ellipse cx="20" cy="8" rx="3.5" ry="32" fill="url(#lionWhite)" transform="rotate(6)"/>
+        <ellipse cx="35" cy="12" rx="3" ry="28" fill="url(#lionCream)" transform="rotate(12)"/>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Soil/growing medium base -->
+  <rect x="0" y="650" width="1200" height="150" fill="#8b5cf6" opacity="0.1"/>
+  
+  <!-- Product label -->
+  <rect x="50" y="50" width="300" height="120" fill="white" rx="15" opacity="0.95"/>
+  <text x="200" y="85" text-anchor="middle" fill="#78716c" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+    Lion's Mane
+  </text>
+  <text x="200" y="110" text-anchor="middle" fill="#57534e" font-family="Arial, sans-serif" font-size="16">
+    Unique &amp; Nutritious
+  </text>
+  <text x="200" y="135" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="12" style="font-style: italic;">
+    Hericium erinaceus
+  </text>
+  
+  <!-- Decorative elements -->
+  <circle cx="1050" cy="150" r="8" fill="#78716c" opacity="0.3"/>
+  <circle cx="1100" cy="200" r="6" fill="#57534e" opacity="0.4"/>
+  <circle cx="150" cy="650" r="10" fill="#a8a29e" opacity="0.3"/>
+  <circle cx="100" cy="700" r="7" fill="#78716c" opacity="0.4"/>
+</svg>

@@ -1,0 +1,194 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="calendulaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fffbeb;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fde68a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="calendulaGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="calendulaOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ea580c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c2410c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="calendulaGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#16a34a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#15803d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#calendulaBg)"/>
+  
+  <!-- Subtle pattern -->
+  <pattern id="calendulaPattern" x="0" y="0" width="90" height="90" patternUnits="userSpaceOnUse">
+    <circle cx="45" cy="45" r="2" fill="#f59e0b" opacity="0.08"/>
+    <circle cx="20" cy="70" r="1.5" fill="#ea580c" opacity="0.06"/>
+  </pattern>
+  <rect width="1200" height="800" fill="url(#calendulaPattern)"/>
+  
+  <!-- Main calendula flowers illustration -->
+  <g transform="translate(600, 400)">
+    <!-- Multiple calendula flowers with many layered petals -->
+    
+    <!-- Calendula 1 (Large golden) -->
+    <g transform="translate(-200, -40)">
+      <!-- Stem -->
+      <rect x="-2" y="0" width="4" height="90" fill="url(#calendulaGreen)" rx="2"/>
+      <!-- Elongated leaves -->
+      <ellipse cx="-25" cy="50" rx="8" ry="20" fill="url(#calendulaGreen)" opacity="0.8" transform="rotate(-30)"/>
+      <ellipse cx="30" cy="60" rx="6" ry="18" fill="url(#calendulaGreen)" opacity="0.8" transform="rotate(25)"/>
+      <!-- Calendula flower with many petals -->
+      <g transform="translate(0, -25)">
+        <!-- Outer ring of petals -->
+        <g>
+          <ellipse cx="0" cy="-20" rx="4" ry="12" fill="url(#calendulaGold)" transform="rotate(0)"/>
+          <ellipse cx="0" cy="-20" rx="4" ry="12" fill="url(#calendulaGold)" transform="rotate(20)"/>
+          <ellipse cx="0" cy="-20" rx="4" ry="12" fill="url(#calendulaGold)" transform="rotate(40)"/>
+          <ellipse cx="0" cy="-20" rx="4" ry="12" fill="url(#calendulaGold)" transform="rotate(60)"/>
+          <ellipse cx="0" cy="-20" rx="4" ry="12" fill="url(#calendulaGold)" transform="rotate(80)"/>
+          <ellipse cx="0" cy="-20" rx="4" ry="12" fill="url(#calendulaGold)" transform="rotate(100)"/>
+          <ellipse cx="0" cy="-20" rx="4" ry="12" fill="url(#calendulaGold)" transform="rotate(120)"/>
+          <ellipse cx="0" cy="-20" rx="4" ry="12" fill="url(#calendulaGold)" transform="rotate(140)"/>
+          <ellipse cx="0" cy="-20" rx="4" ry="12" fill="url(#calendulaGold)" transform="rotate(160)"/>
+          <ellipse cx="0" cy="-20" rx="4" ry="12" fill="url(#calendulaGold)" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-20" rx="4" ry="12" fill="url(#calendulaGold)" transform="rotate(200)"/>
+          <ellipse cx="0" cy="-20" rx="4" ry="12" fill="url(#calendulaGold)" transform="rotate(220)"/>
+          <ellipse cx="0" cy="-20" rx="4" ry="12" fill="url(#calendulaGold)" transform="rotate(240)"/>
+          <ellipse cx="0" cy="-20" rx="4" ry="12" fill="url(#calendulaGold)" transform="rotate(260)"/>
+          <ellipse cx="0" cy="-20" rx="4" ry="12" fill="url(#calendulaGold)" transform="rotate(280)"/>
+          <ellipse cx="0" cy="-20" rx="4" ry="12" fill="url(#calendulaGold)" transform="rotate(300)"/>
+          <ellipse cx="0" cy="-20" rx="4" ry="12" fill="url(#calendulaGold)" transform="rotate(320)"/>
+          <ellipse cx="0" cy="-20" rx="4" ry="12" fill="url(#calendulaGold)" transform="rotate(340)"/>
+        </g>
+        <!-- Inner ring of petals -->
+        <g>
+          <ellipse cx="0" cy="-15" rx="3" ry="9" fill="url(#calendulaOrange)" transform="rotate(10)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="9" fill="url(#calendulaOrange)" transform="rotate(30)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="9" fill="url(#calendulaOrange)" transform="rotate(50)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="9" fill="url(#calendulaOrange)" transform="rotate(70)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="9" fill="url(#calendulaOrange)" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="9" fill="url(#calendulaOrange)" transform="rotate(110)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="9" fill="url(#calendulaOrange)" transform="rotate(130)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="9" fill="url(#calendulaOrange)" transform="rotate(150)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="9" fill="url(#calendulaOrange)" transform="rotate(170)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="9" fill="url(#calendulaOrange)" transform="rotate(190)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="9" fill="url(#calendulaOrange)" transform="rotate(210)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="9" fill="url(#calendulaOrange)" transform="rotate(230)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="9" fill="url(#calendulaOrange)" transform="rotate(250)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="9" fill="url(#calendulaOrange)" transform="rotate(270)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="9" fill="url(#calendulaOrange)" transform="rotate(290)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="9" fill="url(#calendulaOrange)" transform="rotate(310)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="9" fill="url(#calendulaOrange)" transform="rotate(330)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="9" fill="url(#calendulaOrange)" transform="rotate(350)"/>
+        </g>
+        <!-- Center -->
+        <circle cx="0" cy="0" r="6" fill="#dc2626"/>
+      </g>
+    </g>
+    
+    <!-- Calendula 2 (Medium orange) -->
+    <g transform="translate(50, -70)">
+      <!-- Stem -->
+      <rect x="-2" y="0" width="4" height="100" fill="url(#calendulaGreen)" rx="2"/>
+      <!-- Elongated leaves -->
+      <ellipse cx="-30" cy="60" rx="7" ry="18" fill="url(#calendulaGreen)" opacity="0.8" transform="rotate(-35)"/>
+      <!-- Calendula flower -->
+      <g transform="translate(0, -30)">
+        <!-- Outer petals -->
+        <g>
+          <ellipse cx="0" cy="-18" rx="3.5" ry="10" fill="url(#calendulaOrange)" transform="rotate(0)"/>
+          <ellipse cx="0" cy="-18" rx="3.5" ry="10" fill="url(#calendulaOrange)" transform="rotate(25)"/>
+          <ellipse cx="0" cy="-18" rx="3.5" ry="10" fill="url(#calendulaOrange)" transform="rotate(50)"/>
+          <ellipse cx="0" cy="-18" rx="3.5" ry="10" fill="url(#calendulaOrange)" transform="rotate(75)"/>
+          <ellipse cx="0" cy="-18" rx="3.5" ry="10" fill="url(#calendulaOrange)" transform="rotate(100)"/>
+          <ellipse cx="0" cy="-18" rx="3.5" ry="10" fill="url(#calendulaOrange)" transform="rotate(125)"/>
+          <ellipse cx="0" cy="-18" rx="3.5" ry="10" fill="url(#calendulaOrange)" transform="rotate(150)"/>
+          <ellipse cx="0" cy="-18" rx="3.5" ry="10" fill="url(#calendulaOrange)" transform="rotate(175)"/>
+          <ellipse cx="0" cy="-18" rx="3.5" ry="10" fill="url(#calendulaOrange)" transform="rotate(200)"/>
+          <ellipse cx="0" cy="-18" rx="3.5" ry="10" fill="url(#calendulaOrange)" transform="rotate(225)"/>
+          <ellipse cx="0" cy="-18" rx="3.5" ry="10" fill="url(#calendulaOrange)" transform="rotate(250)"/>
+          <ellipse cx="0" cy="-18" rx="3.5" ry="10" fill="url(#calendulaOrange)" transform="rotate(275)"/>
+          <ellipse cx="0" cy="-18" rx="3.5" ry="10" fill="url(#calendulaOrange)" transform="rotate(300)"/>
+          <ellipse cx="0" cy="-18" rx="3.5" ry="10" fill="url(#calendulaOrange)" transform="rotate(325)"/>
+          <ellipse cx="0" cy="-18" rx="3.5" ry="10" fill="url(#calendulaOrange)" transform="rotate(350)"/>
+        </g>
+        <!-- Inner petals -->
+        <g>
+          <ellipse cx="0" cy="-12" rx="2.5" ry="7" fill="url(#calendulaGold)" transform="rotate(15)"/>
+          <ellipse cx="0" cy="-12" rx="2.5" ry="7" fill="url(#calendulaGold)" transform="rotate(40)"/>
+          <ellipse cx="0" cy="-12" rx="2.5" ry="7" fill="url(#calendulaGold)" transform="rotate(65)"/>
+          <ellipse cx="0" cy="-12" rx="2.5" ry="7" fill="url(#calendulaGold)" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-12" rx="2.5" ry="7" fill="url(#calendulaGold)" transform="rotate(115)"/>
+          <ellipse cx="0" cy="-12" rx="2.5" ry="7" fill="url(#calendulaGold)" transform="rotate(140)"/>
+          <ellipse cx="0" cy="-12" rx="2.5" ry="7" fill="url(#calendulaGold)" transform="rotate(165)"/>
+          <ellipse cx="0" cy="-12" rx="2.5" ry="7" fill="url(#calendulaGold)" transform="rotate(190)"/>
+          <ellipse cx="0" cy="-12" rx="2.5" ry="7" fill="url(#calendulaGold)" transform="rotate(215)"/>
+          <ellipse cx="0" cy="-12" rx="2.5" ry="7" fill="url(#calendulaGold)" transform="rotate(240)"/>
+          <ellipse cx="0" cy="-12" rx="2.5" ry="7" fill="url(#calendulaGold)" transform="rotate(265)"/>
+          <ellipse cx="0" cy="-12" rx="2.5" ry="7" fill="url(#calendulaGold)" transform="rotate(290)"/>
+          <ellipse cx="0" cy="-12" rx="2.5" ry="7" fill="url(#calendulaGold)" transform="rotate(315)"/>
+          <ellipse cx="0" cy="-12" rx="2.5" ry="7" fill="url(#calendulaGold)" transform="rotate(340)"/>
+        </g>
+        <!-- Center -->
+        <circle cx="0" cy="0" r="5" fill="#dc2626"/>
+      </g>
+    </g>
+    
+    <!-- Calendula 3 (Smaller golden) -->
+    <g transform="translate(250, -50)">
+      <!-- Stem -->
+      <rect x="-1.5" y="0" width="3" height="80" fill="url(#calendulaGreen)" rx="1.5"/>
+      <!-- Elongated leaves -->
+      <ellipse cx="25" cy="45" rx="6" ry="15" fill="url(#calendulaGreen)" opacity="0.8" transform="rotate(30)"/>
+      <!-- Calendula flower -->
+      <g transform="translate(0, -20)">
+        <!-- Petals -->
+        <g>
+          <ellipse cx="0" cy="-15" rx="3" ry="8" fill="url(#calendulaGold)" transform="rotate(0)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="8" fill="url(#calendulaGold)" transform="rotate(30)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="8" fill="url(#calendulaGold)" transform="rotate(60)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="8" fill="url(#calendulaGold)" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="8" fill="url(#calendulaGold)" transform="rotate(120)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="8" fill="url(#calendulaGold)" transform="rotate(150)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="8" fill="url(#calendulaGold)" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="8" fill="url(#calendulaGold)" transform="rotate(210)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="8" fill="url(#calendulaGold)" transform="rotate(240)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="8" fill="url(#calendulaGold)" transform="rotate(270)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="8" fill="url(#calendulaGold)" transform="rotate(300)"/>
+          <ellipse cx="0" cy="-15" rx="3" ry="8" fill="url(#calendulaGold)" transform="rotate(330)"/>
+        </g>
+        <!-- Center -->
+        <circle cx="0" cy="0" r="4" fill="#dc2626"/>
+      </g>
+    </g>
+    
+    <!-- Additional leaves -->
+    <ellipse cx="-150" cy="30" rx="5" ry="15" fill="url(#calendulaGreen)" opacity="0.7" transform="rotate(-20)"/>
+    <ellipse cx="180" cy="40" rx="6" ry="16" fill="url(#calendulaGreen)" opacity="0.7" transform="rotate(25)"/>
+  </g>
+  
+  <!-- Soil/growing medium base -->
+  <rect x="0" y="650" width="1200" height="150" fill="#8b5cf6" opacity="0.1"/>
+  
+  <!-- Product label -->
+  <rect x="50" y="50" width="300" height="120" fill="white" rx="15" opacity="0.95"/>
+  <text x="200" y="85" text-anchor="middle" fill="#f59e0b" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+    Calendula
+  </text>
+  <text x="200" y="110" text-anchor="middle" fill="#ea580c" font-family="Arial, sans-serif" font-size="16">
+    Golden &amp; Healing
+  </text>
+  <text x="200" y="135" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="12" style="font-style: italic;">
+    Calendula officinalis
+  </text>
+  
+  <!-- Decorative elements -->
+  <circle cx="1050" cy="150" r="8" fill="#f59e0b" opacity="0.3"/>
+  <circle cx="1100" cy="200" r="6" fill="#ea580c" opacity="0.4"/>
+  <circle cx="150" cy="650" r="10" fill="#d97706" opacity="0.3"/>
+  <circle cx="100" cy="700" r="7" fill="#c2410c" opacity="0.4"/>
+</svg>

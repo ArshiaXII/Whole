@@ -1,0 +1,153 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="violaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#faf5ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f3e8ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9d5ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="violaPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5b21b6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="violaYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#eab308;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ca8a04;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="violaGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#16a34a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#15803d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#violaBg)"/>
+  
+  <!-- Subtle pattern -->
+  <pattern id="violaPattern" x="0" y="0" width="70" height="70" patternUnits="userSpaceOnUse">
+    <circle cx="35" cy="35" r="1.5" fill="#7c3aed" opacity="0.08"/>
+    <circle cx="15" cy="55" r="1" fill="#eab308" opacity="0.06"/>
+  </pattern>
+  <rect width="1200" height="800" fill="url(#violaPattern)"/>
+  
+  <!-- Main viola flowers illustration -->
+  <g transform="translate(600, 400)">
+    <!-- Multiple viola flowers with heart-shaped petals -->
+    
+    <!-- Viola 1 (Purple and Yellow) -->
+    <g transform="translate(-220, -60)">
+      <!-- Stem -->
+      <rect x="-1.5" y="0" width="3" height="70" fill="url(#violaGreen)" rx="1.5"/>
+      <!-- Small heart-shaped leaves -->
+      <path d="M-20,30 Q-25,25 -20,20 Q-15,25 -10,20 Q-5,25 -10,30 Q-15,35 -20,30 Z" fill="url(#violaGreen)" opacity="0.8"/>
+      <!-- Viola flower (pansy-like) -->
+      <g transform="translate(0, -15)">
+        <!-- Top petals (purple) -->
+        <ellipse cx="-8" cy="-12" rx="8" ry="6" fill="url(#violaPurple)" transform="rotate(-20)"/>
+        <ellipse cx="8" cy="-12" rx="8" ry="6" fill="url(#violaPurple)" transform="rotate(20)"/>
+        <!-- Side petals (purple) -->
+        <ellipse cx="-12" cy="2" rx="7" ry="5" fill="url(#violaPurple)" transform="rotate(-45)"/>
+        <ellipse cx="12" cy="2" rx="7" ry="5" fill="url(#violaPurple)" transform="rotate(45)"/>
+        <!-- Bottom petal (yellow with purple markings) -->
+        <ellipse cx="0" cy="8" rx="10" ry="7" fill="url(#violaYellow)"/>
+        <!-- Purple markings on yellow petal -->
+        <path d="M-3,5 Q0,8 3,5 Q0,10 -3,5" fill="url(#violaPurple)" opacity="0.6"/>
+        <!-- Center -->
+        <circle cx="0" cy="0" r="2" fill="#4c1d95"/>
+      </g>
+    </g>
+    
+    <!-- Viola 2 (Smaller, more purple) -->
+    <g transform="translate(-50, -80)">
+      <!-- Stem -->
+      <rect x="-1.5" y="0" width="3" height="85" fill="url(#violaGreen)" rx="1.5"/>
+      <!-- Small heart-shaped leaves -->
+      <path d="M15,40 Q20,35 15,30 Q10,35 5,30 Q0,35 5,40 Q10,45 15,40 Z" fill="url(#violaGreen)" opacity="0.8"/>
+      <!-- Viola flower -->
+      <g transform="translate(0, -18)">
+        <!-- Top petals (deep purple) -->
+        <ellipse cx="-7" cy="-10" rx="7" ry="5" fill="#5b21b6" transform="rotate(-25)"/>
+        <ellipse cx="7" cy="-10" rx="7" ry="5" fill="#5b21b6" transform="rotate(25)"/>
+        <!-- Side petals (purple) -->
+        <ellipse cx="-10" cy="1" rx="6" ry="4" fill="url(#violaPurple)" transform="rotate(-50)"/>
+        <ellipse cx="10" cy="1" rx="6" ry="4" fill="url(#violaPurple)" transform="rotate(50)"/>
+        <!-- Bottom petal (light purple with yellow center) -->
+        <ellipse cx="0" cy="6" rx="8" ry="6" fill="#a855f7"/>
+        <!-- Yellow center marking -->
+        <ellipse cx="0" cy="4" rx="3" ry="2" fill="url(#violaYellow)"/>
+        <!-- Center -->
+        <circle cx="0" cy="0" r="1.5" fill="#4c1d95"/>
+      </g>
+    </g>
+    
+    <!-- Viola 3 (Yellow dominant) -->
+    <g transform="translate(120, -50)">
+      <!-- Stem -->
+      <rect x="-1.5" y="0" width="3" height="75" fill="url(#violaGreen)" rx="1.5"/>
+      <!-- Small heart-shaped leaves -->
+      <path d="M-25,35 Q-30,30 -25,25 Q-20,30 -15,25 Q-10,30 -15,35 Q-20,40 -25,35 Z" fill="url(#violaGreen)" opacity="0.8"/>
+      <!-- Viola flower -->
+      <g transform="translate(0, -16)">
+        <!-- Top petals (light purple) -->
+        <ellipse cx="-7" cy="-11" rx="7" ry="5" fill="#a855f7" transform="rotate(-22)"/>
+        <ellipse cx="7" cy="-11" rx="7" ry="5" fill="#a855f7" transform="rotate(22)"/>
+        <!-- Side petals (yellow) -->
+        <ellipse cx="-10" cy="1" rx="6" ry="4" fill="url(#violaYellow)" transform="rotate(-48)"/>
+        <ellipse cx="10" cy="1" rx="6" ry="4" fill="url(#violaYellow)" transform="rotate(48)"/>
+        <!-- Bottom petal (bright yellow) -->
+        <ellipse cx="0" cy="7" rx="9" ry="6" fill="url(#violaYellow)"/>
+        <!-- Purple markings -->
+        <path d="M-2,4 Q0,7 2,4 Q0,9 -2,4" fill="url(#violaPurple)" opacity="0.5"/>
+        <!-- Center -->
+        <circle cx="0" cy="0" r="1.5" fill="#4c1d95"/>
+      </g>
+    </g>
+    
+    <!-- Viola 4 (Mixed colors) -->
+    <g transform="translate(280, -70)">
+      <!-- Stem -->
+      <rect x="-1.5" y="0" width="3" height="80" fill="url(#violaGreen)" rx="1.5"/>
+      <!-- Small heart-shaped leaves -->
+      <path d="M20,38 Q25,33 20,28 Q15,33 10,28 Q5,33 10,38 Q15,43 20,38 Z" fill="url(#violaGreen)" opacity="0.8"/>
+      <!-- Viola flower -->
+      <g transform="translate(0, -17)">
+        <!-- Top petals (purple) -->
+        <ellipse cx="-6" cy="-10" rx="6" ry="4" fill="url(#violaPurple)" transform="rotate(-24)"/>
+        <ellipse cx="6" cy="-10" rx="6" ry="4" fill="url(#violaPurple)" transform="rotate(24)"/>
+        <!-- Side petals (mixed) -->
+        <ellipse cx="-9" cy="1" rx="5" ry="3" fill="#a855f7" transform="rotate(-52)"/>
+        <ellipse cx="9" cy="1" rx="5" ry="3" fill="url(#violaYellow)" transform="rotate(52)"/>
+        <!-- Bottom petal (yellow with purple edge) -->
+        <ellipse cx="0" cy="6" rx="7" ry="5" fill="url(#violaYellow)"/>
+        <ellipse cx="0" cy="6" rx="7" ry="5" fill="url(#violaPurple)" opacity="0.3"/>
+        <!-- Center -->
+        <circle cx="0" cy="0" r="1.5" fill="#4c1d95"/>
+      </g>
+    </g>
+    
+    <!-- Additional small leaves -->
+    <path d="M-150,20 Q-155,15 -150,10 Q-145,15 -140,10 Q-135,15 -140,20 Q-145,25 -150,20 Z" fill="url(#violaGreen)" opacity="0.6"/>
+    <path d="M200,25 Q205,20 200,15 Q195,20 190,15 Q185,20 190,25 Q195,30 200,25 Z" fill="url(#violaGreen)" opacity="0.6"/>
+  </g>
+  
+  <!-- Soil/growing medium base -->
+  <rect x="0" y="650" width="1200" height="150" fill="#8b5cf6" opacity="0.1"/>
+  
+  <!-- Product label -->
+  <rect x="50" y="50" width="280" height="120" fill="white" rx="15" opacity="0.95"/>
+  <text x="190" y="85" text-anchor="middle" fill="#7c3aed" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+    Viola
+  </text>
+  <text x="190" y="110" text-anchor="middle" fill="#eab308" font-family="Arial, sans-serif" font-size="16">
+    Sweet &amp; Delicate
+  </text>
+  <text x="190" y="135" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="12" style="font-style: italic;">
+    Viola tricolor
+  </text>
+  
+  <!-- Decorative elements -->
+  <circle cx="1050" cy="150" r="8" fill="#7c3aed" opacity="0.3"/>
+  <circle cx="1100" cy="200" r="6" fill="#eab308" opacity="0.4"/>
+  <circle cx="150" cy="650" r="10" fill="#5b21b6" opacity="0.3"/>
+  <circle cx="100" cy="700" r="7" fill="#ca8a04" opacity="0.4"/>
+</svg>

@@ -1,0 +1,99 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="daikonBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0fdf4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#dcfce7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bbf7d0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="daikonGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#16a34a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#15803d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="daikonWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#daikonBg)"/>
+  
+  <!-- Subtle pattern -->
+  <pattern id="daikonPattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="20" cy="20" r="1" fill="#16a34a" opacity="0.1"/>
+  </pattern>
+  <rect width="1200" height="800" fill="url(#daikonPattern)"/>
+  
+  <!-- Main daikon radish microgreens illustration -->
+  <g transform="translate(600, 400)">
+    <!-- Multiple microgreen stems -->
+    <g transform="translate(-200, 0)">
+      <!-- Stem 1 -->
+      <rect x="-2" y="-80" width="4" height="160" fill="url(#daikonWhite)" rx="2"/>
+      <!-- Leaves -->
+      <ellipse cx="-15" cy="-70" rx="12" ry="8" fill="url(#daikonGreen)" transform="rotate(-20)"/>
+      <ellipse cx="15" cy="-65" rx="10" ry="6" fill="url(#daikonGreen)" transform="rotate(25)"/>
+      <ellipse cx="-10" cy="-50" rx="8" ry="5" fill="url(#daikonGreen)" transform="rotate(-15)"/>
+    </g>
+    
+    <g transform="translate(-100, 0)">
+      <!-- Stem 2 -->
+      <rect x="-2" y="-90" width="4" height="180" fill="url(#daikonWhite)" rx="2"/>
+      <!-- Leaves -->
+      <ellipse cx="-18" cy="-80" rx="14" ry="9" fill="url(#daikonGreen)" transform="rotate(-25)"/>
+      <ellipse cx="18" cy="-75" rx="12" ry="7" fill="url(#daikonGreen)" transform="rotate(30)"/>
+      <ellipse cx="-12" cy="-55" rx="10" ry="6" fill="url(#daikonGreen)" transform="rotate(-10)"/>
+      <ellipse cx="8" cy="-45" rx="8" ry="5" fill="url(#daikonGreen)" transform="rotate(20)"/>
+    </g>
+    
+    <g transform="translate(0, 0)">
+      <!-- Stem 3 (center, tallest) -->
+      <rect x="-3" y="-100" width="6" height="200" fill="url(#daikonWhite)" rx="3"/>
+      <!-- Leaves -->
+      <ellipse cx="-20" cy="-90" rx="16" ry="10" fill="url(#daikonGreen)" transform="rotate(-30)"/>
+      <ellipse cx="20" cy="-85" rx="14" ry="8" fill="url(#daikonGreen)" transform="rotate(35)"/>
+      <ellipse cx="-15" cy="-65" rx="12" ry="7" fill="url(#daikonGreen)" transform="rotate(-20)"/>
+      <ellipse cx="12" cy="-55" rx="10" ry="6" fill="url(#daikonGreen)" transform="rotate(25)"/>
+      <ellipse cx="-8" cy="-35" rx="8" ry="5" fill="url(#daikonGreen)" transform="rotate(-15)"/>
+    </g>
+    
+    <g transform="translate(100, 0)">
+      <!-- Stem 4 -->
+      <rect x="-2" y="-85" width="4" height="170" fill="url(#daikonWhite)" rx="2"/>
+      <!-- Leaves -->
+      <ellipse cx="-16" cy="-75" rx="13" ry="8" fill="url(#daikonGreen)" transform="rotate(-22)"/>
+      <ellipse cx="16" cy="-70" rx="11" ry="6" fill="url(#daikonGreen)" transform="rotate(28)"/>
+      <ellipse cx="-10" cy="-50" rx="9" ry="5" fill="url(#daikonGreen)" transform="rotate(-12)"/>
+    </g>
+    
+    <g transform="translate(200, 0)">
+      <!-- Stem 5 -->
+      <rect x="-2" y="-75" width="4" height="150" fill="url(#daikonWhite)" rx="2"/>
+      <!-- Leaves -->
+      <ellipse cx="-14" cy="-65" rx="11" ry="7" fill="url(#daikonGreen)" transform="rotate(-18)"/>
+      <ellipse cx="14" cy="-60" rx="9" ry="5" fill="url(#daikonGreen)" transform="rotate(22)"/>
+    </g>
+  </g>
+  
+  <!-- Soil/growing medium base -->
+  <rect x="0" y="650" width="1200" height="150" fill="#8b5cf6" opacity="0.1"/>
+  
+  <!-- Product label -->
+  <rect x="50" y="50" width="300" height="120" fill="white" rx="15" opacity="0.95"/>
+  <text x="200" y="85" text-anchor="middle" fill="#16a34a" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+    Daikon Radish
+  </text>
+  <text x="200" y="110" text-anchor="middle" fill="#15803d" font-family="Arial, sans-serif" font-size="16">
+    Spicy &amp; Crisp
+  </text>
+  <text x="200" y="135" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="12" style="font-style: italic;">
+    Raphanus sativus var. longipinnatus
+  </text>
+  
+  <!-- Decorative elements -->
+  <circle cx="1050" cy="150" r="8" fill="#16a34a" opacity="0.3"/>
+  <circle cx="1100" cy="200" r="6" fill="#22c55e" opacity="0.4"/>
+  <circle cx="150" cy="650" r="10" fill="#15803d" opacity="0.3"/>
+  <circle cx="100" cy="700" r="7" fill="#16a34a" opacity="0.4"/>
+</svg>
