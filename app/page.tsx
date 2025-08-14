@@ -245,15 +245,20 @@ export default function HomePage() {
               <Link href="/products" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
                 {t.nav.products}
               </Link>
+              <Link href="/blog" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
+                {language === 'tr' ? 'Blog' : 'Blog'}
+              </Link>
               <Link href="#about" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
                 {t.nav.about}
               </Link>
               <Link href="#services" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
                 {t.nav.services}
               </Link>
-
               <Link href="/contact" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
                 {t.nav.contacts}
+              </Link>
+              <Link href="/login" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
+                {language === 'tr' ? 'Giriş' : 'Login'}
               </Link>
 
               {/* Language Toggle */}
@@ -297,6 +302,13 @@ export default function HomePage() {
                 {t.nav.products}
               </Link>
               <Link
+                href="/blog"
+                className="block text-white hover:text-green-400 transition-colors font-montserrat font-medium py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {language === 'tr' ? 'Blog' : 'Blog'}
+              </Link>
+              <Link
                 href="#about"
                 className="block text-white hover:text-green-400 transition-colors font-montserrat font-medium py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -316,6 +328,13 @@ export default function HomePage() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t.nav.contacts}
+              </Link>
+              <Link
+                href="/login"
+                className="block text-white hover:text-green-400 transition-colors font-montserrat font-medium py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {language === 'tr' ? 'Giriş' : 'Login'}
               </Link>
               <button
                 onClick={() => {
@@ -765,6 +784,7 @@ export default function HomePage() {
               <ul className="space-y-2 text-gray-400">
                 <li><Link href="/" className="hover:text-green-400 transition-colors">Ana Sayfa</Link></li>
                 <li><Link href="/products" className="hover:text-green-400 transition-colors">Ürünler</Link></li>
+                <li><Link href="/blog" className="hover:text-green-400 transition-colors">Blog</Link></li>
                 <li><Link href="#about" className="hover:text-green-400 transition-colors">Hakkımızda</Link></li>
                 <li><Link href="/contact" className="hover:text-green-400 transition-colors">İletişim</Link></li>
               </ul>

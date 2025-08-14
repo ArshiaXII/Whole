@@ -283,6 +283,9 @@ export default function ProductsPage() {
               <Link href="/products" className="text-green-400 hover:text-green-300 transition-colors font-montserrat font-medium">
                 {t.nav.products}
               </Link>
+              <Link href="/blog" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
+                {language === 'tr' ? 'Blog' : 'Blog'}
+              </Link>
               <Link href="/" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
                 {t.nav.about}
               </Link>
@@ -291,6 +294,9 @@ export default function ProductsPage() {
               </Link>
               <Link href="/contact" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
                 {t.nav.contacts}
+              </Link>
+              <Link href="/login" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
+                {language === 'tr' ? 'Giriş' : 'Login'}
               </Link>
 
               {/* Language Toggle */}
@@ -583,6 +589,7 @@ export default function ProductsPage() {
               <ul className="space-y-2 text-gray-400">
                 <li><Link href="/" className="hover:text-green-400 transition-colors">Ana Sayfa</Link></li>
                 <li><Link href="/products" className="hover:text-green-400 transition-colors">Ürünler</Link></li>
+                <li><Link href="/blog" className="hover:text-green-400 transition-colors">Blog</Link></li>
                 <li><Link href="/#about" className="hover:text-green-400 transition-colors">Hakkımızda</Link></li>
                 <li><Link href="/contact" className="hover:text-green-400 transition-colors">İletişim</Link></li>
               </ul>

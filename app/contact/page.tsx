@@ -210,6 +210,9 @@ export default function ContactPage() {
               <Link href="/products" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
                 {t.nav.products}
               </Link>
+              <Link href="/blog" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
+                {language === 'tr' ? 'Blog' : 'Blog'}
+              </Link>
               <Link href="/" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
                 {t.nav.about}
               </Link>
@@ -218,6 +221,9 @@ export default function ContactPage() {
               </Link>
               <Link href="/contact" className="text-green-400 hover:text-green-300 transition-colors font-montserrat font-medium">
                 {t.nav.contacts}
+              </Link>
+              <Link href="/login" className="text-white hover:text-green-400 transition-colors font-montserrat font-medium">
+                {language === 'tr' ? 'Giriş' : 'Login'}
               </Link>
 
               {/* Language Toggle */}
@@ -592,6 +598,11 @@ export default function ContactPage() {
                 <li>
                   <Link href="/products" className="text-gray-300 hover:text-green-400">
                     Ürünler
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog" className="text-gray-300 hover:text-green-400">
+                    Blog
                   </Link>
                 </li>
                 <li>
